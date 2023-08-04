@@ -1,0 +1,19 @@
+{
+  "name": "ekstraktor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "binary-parser": "^2.2.1",
+    "mp4box": "^0.5.2"
+  },
+  "dependencies": {
+    "gopro-telemetry": "^1.2.1",
+    "gpmf-extract": "^0.3.1"
+  }
+}
