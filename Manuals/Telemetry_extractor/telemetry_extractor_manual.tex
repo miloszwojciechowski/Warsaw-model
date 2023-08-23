@@ -9,7 +9,7 @@
 
 \author{Miłosz Wojciechowski}
 \title{Telemetry extractor manual}
-\date{\today\\ v0.2}
+\date{\today\\ v0.3}
 
 
 \maketitle
@@ -25,7 +25,7 @@
 	\caption{GoPro Max manual fragment.}
 \end{figure}
 	If GPS is off, swipe down to access the Dashboard and Preferences. Click on the Preferences, find option Regional and there turn the GPS On.\\
-	\item Download repositories: \url{https://github.com/JuanIrache/gopro-telemetry} and \url{https://github.com/JuanIrache/gpmf-extract} into desired directory (make sure they are in the same folder), keep in mind that an output file will be created in the same location as extractor.js file from the gopro-telemetry.
+	\item Download repositories: \href{https://github.com/JuanIrache/gopro-telemetry}{gopro-telemetry} and \href{https://github.com/JuanIrache/gpmf-extract}{gpmf-extract} and unpack them in GoPro-Telemetry-Extractor directory.
 	\item Install Node.js from \url{https://nodejs.org/en} using recommended download.
 	\begin{figure}[H]
 		\centering
@@ -72,21 +72,15 @@
 			\caption{Video files location.}
 		\end{figure}
 		\hfill
-		\item Choose video which you want to extract telemetry data from and copy it to folder where repository was downloaded:\\
+		\item Choose video which you want to extract telemetry data from and copy it to a folder where repository was downloaded so a video file and extractor.js are in the same directory:\\
 		
-		360 videos’ names and their LRV versions start from GS e.g. GS020007.360, GS020007.LRV.\\
+		360 videos’ names and their LRV versions start with GS e.g. GS020007.360, GS020007.LRV.\\
 		
-		Regular videos’ and their LRV versions’ names start from GH for the former and from GL for the latter e.g. GH010008.MP4, GL010008.LRV. 	
+		Regular videos’ and their LRV versions’ names start with GH for the former and with GL for the latter e.g. GH010008.MP4, GL010008.LRV. \\
+		While only extracting telemetry i suggest using LRV file since it will work much faster.
 	\end{enumerate}
-	\item Open extractor.js in text/code editor (Notepad++ will be sufficient) and in line no. 7 change file name to one that matches with your video name as the template below shows:
-	
-	\vspace{3mm}
-	\centerline{const videoFilePath = './video-name.LRV';}
-	\vspace{3mm}
-	
-	And save the file. Every time you change a video you have to change that line.
-	\item Open Command Prompt by typing “cmd” in the Start Menu and navigate to extractor.js location – to choose a disc write disc letter followed by colon e.g. C: and press enter. Now type “cd” and paste path to folder in which extractor.js is located.
-	\item When in proper directory, write “node extractor.js” to run program and get telemetry .csv file.
+	\item Open Command Prompt by typing “cmd” in the Start Menu and navigate to extractor.js location.
+	\item When in proper directory run the program by writing “node extractor.js <your video file> e.g. 'node extractor.js GS020007.LRV'. Telemetry .csv file will appear in the same location as extractor.js file.
 	\pagebreak
 	\item To show trajectory on a map open \\ 
 	\url{https://mygeodata.cloud/converter/csv-to-gps}, load received earlier .csv file and click “Show in a Map”.
