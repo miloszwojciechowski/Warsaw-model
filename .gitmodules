@@ -1,0 +1,6 @@
+[submodule "gopro-telemetry"]
+	path = GoPro-Telemetry-Extractor/gopro-telemetry
+	url = https://github.com/JuanIrache/gopro-telemetry
+[submodule "gpmf-extract"]
+	path = gpmf-extract
+	url = https://github.com/JuanIrache/gpmf-extract
