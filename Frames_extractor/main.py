@@ -17,6 +17,7 @@ def searchDirectory():
 def on_closing():
   if messagebox.askokcancel("Quit", "Do you want to quit?"):
     window.destroy()
+    exit()
 
 # Main function
 def run():

@@ -1,7 +1,6 @@
 import cv2
 import folium
 from folium.plugins import *
-import multiprocessing
 from natsort import natsorted
 import os
 from os import listdir
@@ -167,7 +166,6 @@ def visualization(videoFile,framesDir, frameStep):
 
   # Create a list of frames' paths
   videoFrames = natsorted([join(f'http://localhost:{PORT}', f) for f in listdir(framesDir) if isfile(join(framesDir, f))])
-  print(videoFrames)
 
   # Get time period between extracted frames (in milliseconds since that's the unit of timestamp in GoPro camera)
   fps = getFPS(videoFile)
@@ -186,8 +184,6 @@ def visualization(videoFile,framesDir, frameStep):
     fragment.at[closestPoint, 'images'] = videoFrames[i] # add frame path to column 'images' for chosen row
     frameRows.append(closestPoint) # add row index of row that has image path
     millisecond += tmPeriod # increase by period between each frame
-
-  print(telemetry)
 
   # Tuple with x, y coordinates
   points = tuple(zip(telemetry["latitude"].values, telemetry["longitude"].values))
