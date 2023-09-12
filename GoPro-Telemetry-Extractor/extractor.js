@@ -5,6 +5,7 @@ const goproTelemetry = require('./gopro-telemetry');
 
 // Path to video file is received from the first argument of the program
 const videoFilePath = process.argv[2];
+const teleFileSaveLoc = process.argv[3];
 
 // Function to extract filename from a path
 function getFilename(filePath) {
@@ -43,9 +44,14 @@ async function processVideoFile() {
 	const csvContent = 'date,timestamp,latitude,longitude,altitude\n' + csvRows.join('\n');
 
 	// Save data to CSV file named after video name
-	const csvFilePath = path.join(__dirname, getFilename(videoFilePath) + '_telemetry.csv');
-	console.log('File name:', getFilename(videoFilePath));
+	if (teleFileSaveLoc){
+		var csvFilePath = path.join(teleFileSaveLoc, getFilename(videoFilePath) + '_telemetry.csv');
+	}
+	else{
+		var csvFilePath = path.join(__dirname, getFilename(videoFilePath) + '_telemetry.csv');
+	}
 	fs.writeFileSync(csvFilePath, csvContent);
+	console.log('Telemetry exported to CSV:', csvFilePath);
 
   } catch (error) {
     console.error('Error:', error);

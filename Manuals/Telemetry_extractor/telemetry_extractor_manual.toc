@@ -1,10 +1,12 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}GoPro video types}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}How to record a video}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Export camera recordings}{4}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Install environment and Git}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Install Git}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Install node js}{10}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Run Telemetry-extractor}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Download program and dependencies from Git}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Run the program}{16}{section.3.2}%
+\contentsline {chapter}{\numberline {2}Update GoPro MAX camera}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Recording a video}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}How to record a video}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}GoPro video types}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Export camera recordings}{10}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Install environment and Git}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Install Git}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Install node js}{16}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Run Telemetry-extractor}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Download program and dependencies from Git}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Run the program}{22}{section.5.2}%
