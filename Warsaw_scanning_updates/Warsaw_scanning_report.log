@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  5 OCT 2023 15:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  18 OCT 2023 22:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -483,55 +483,132 @@ File: ./images//route_c12.png Graphic file (type png)
 Package pdftex.def Info: ./images//route_c12.png  used on input line 282.
 (pdftex.def)             Requested size: 300.30167pt x 285.65012pt.
  [27]
-<./images//route_p13.png, id=244, 1160.08406pt x 481.8pt>
+<./images//route_p13.png, id=244, 917.67844pt x 585.68813pt>
 File: ./images//route_p13.png Graphic file (type png)
 <use ./images//route_p13.png>
 Package pdftex.def Info: ./images//route_p13.png  used on input line 294.
-(pdftex.def)             Requested size: 300.30167pt x 124.72101pt.
-<./images//route_c13.png, id=245, 983.17313pt x 521.69907pt>
+(pdftex.def)             Requested size: 350.99762pt x 224.02051pt.
+<./images//route_c13.png, id=245, 842.39719pt x 585.68813pt>
 File: ./images//route_c13.png Graphic file (type png)
 <use ./images//route_c13.png>
 Package pdftex.def Info: ./images//route_c13.png  used on input line 301.
-(pdftex.def)             Requested size: 300.30167pt x 159.34485pt.
- [28 <./images//route_p12.png> <./images//route_c12.png>]
-<./images//route_p14.png, id=253, 888.31876pt x 603.75563pt>
+(pdftex.def)             Requested size: 350.99762pt x 244.0391pt.
+ [28 <./images//route_p12.png> <./images//route_c12.png>] [29] [30 <./images//r
+oute_p13.png> <./images//route_c13.png>]
+<./images//route_p14.png, id=265, 888.31876pt x 603.75563pt>
 File: ./images//route_p14.png Graphic file (type png)
 <use ./images//route_p14.png>
-Package pdftex.def Info: ./images//route_p14.png  used on input line 313.
-(pdftex.def)             Requested size: 300.30167pt x 204.1042pt.
-<./images//route_c14.png, id=254, 1034.36438pt x 618.81187pt>
+Package pdftex.def Info: ./images//route_p14.png  used on input line 315.
+(pdftex.def)             Requested size: 350.99762pt x 238.55916pt.
+<./images//route_c14.png, id=266, 753.5653pt x 657.95813pt>
 File: ./images//route_c14.png Graphic file (type png)
 <use ./images//route_c14.png>
-Package pdftex.def Info: ./images//route_c14.png  used on input line 320.
-(pdftex.def)             Requested size: 300.30167pt x 179.65857pt.
+Package pdftex.def Info: ./images//route_c14.png  used on input line 322.
+(pdftex.def)             Requested size: 350.99762pt x 306.4594pt.
 
-Overfull \hbox (13.43008pt too wide) in paragraph at lines 308--326
+Overfull \hbox (13.43008pt too wide) in paragraph at lines 310--328
 \OT1/cmr/m/n/12 street, To-warowa street, Jero-zolim-skie av-enue and Ze-lazna 
 street. Planned
  []
 
-[29 <./images//route_p13.png> <./images//route_c13.png>]
-<./images//route_p15.png, id=264, 892.08281pt x 615.80063pt>
+[31]
+Overfull \vbox (17.71852pt too high) has occurred while \output is active []
+
+
+[32 <./images//route_p14.png> <./images//route_c14.png>]
+<./images//route_p15.png, id=280, 844.65562pt x 665.48625pt>
 File: ./images//route_p15.png Graphic file (type png)
 <use ./images//route_p15.png>
-Package pdftex.def Info: ./images//route_p15.png  used on input line 332.
-(pdftex.def)             Requested size: 300.30167pt x 207.29285pt.
-<./images//route_c15.png, id=265, 927.465pt x 632.3625pt>
+Package pdftex.def Info: ./images//route_p15.png  used on input line 336.
+(pdftex.def)             Requested size: 331.50238pt x 261.18361pt.
+<./images//route_c15.png, id=281, 808.52063pt x 666.23906pt>
 File: ./images//route_c15.png Graphic file (type png)
 <use ./images//route_c15.png>
-Package pdftex.def Info: ./images//route_c15.png  used on input line 339.
-(pdftex.def)             Requested size: 300.30167pt x 204.7531pt.
- [30 <./images//route_p14.png> <./images//route_c14.png>] [31 <./images//route_
-p15.png> <./images//route_c15.png>] [32] (Warsaw_scanning_report.aux)
+Package pdftex.def Info: ./images//route_c15.png  used on input line 343.
+(pdftex.def)             Requested size: 331.50238pt x 273.16994pt.
+ [33]
+Overfull \vbox (7.05351pt too high) has occurred while \output is active []
+
+
+[34 <./images//route_p15.png> <./images//route_c15.png>]
+<./images//route_p16.png, id=294, 594.72188pt x 642.90187pt>
+File: ./images//route_p16.png Graphic file (type png)
+<use ./images//route_p16.png>
+Package pdftex.def Info: ./images//route_p16.png  used on input line 357.
+(pdftex.def)             Requested size: 245.7019pt x 265.6025pt.
+<./images//route_c16.png, id=295, 583.42969pt x 639.89063pt>
+File: ./images//route_c16.png Graphic file (type png)
+<use ./images//route_c16.png>
+Package pdftex.def Info: ./images//route_c16.png  used on input line 364.
+(pdftex.def)             Requested size: 245.7019pt x 269.47475pt.
+ [35]
+Overfull \vbox (7.7772pt too high) has occurred while \output is active []
+
+
+[36 <./images//route_p16.png> <./images//route_c16.png>]
+<./images//route_p17.png, id=308, 716.6775pt x 648.92438pt>
+File: ./images//route_p17.png Graphic file (type png)
+<use ./images//route_p17.png>
+Package pdftex.def Info: ./images//route_p17.png  used on input line 380.
+(pdftex.def)             Requested size: 292.5pt x 264.85269pt.
+<./images//route_c17.png, id=309, 679.03688pt x 636.87938pt>
+File: ./images//route_c17.png Graphic file (type png)
+<use ./images//route_c17.png>
+Package pdftex.def Info: ./images//route_c17.png  used on input line 387.
+(pdftex.def)             Requested size: 292.5pt x 274.33868pt.
+ [37]
+Overfull \vbox (11.89134pt too high) has occurred while \output is active []
+
+
+[38 <./images//route_p17.png> <./images//route_c17.png>]
+<./images//route_p18.png, id=323, 882.29625pt x 636.87938pt>
+File: ./images//route_p18.png Graphic file (type png)
+<use ./images//route_p18.png>
+Package pdftex.def Info: ./images//route_p18.png  used on input line 402.
+(pdftex.def)             Requested size: 370.49881pt x 267.43892pt.
+<./images//route_c18.png, id=324, 881.54344pt x 636.87938pt>
+File: ./images//route_c18.png Graphic file (type png)
+<use ./images//route_c18.png>
+Package pdftex.def Info: ./images//route_c18.png  used on input line 409.
+(pdftex.def)             Requested size: 370.49881pt x 267.67215pt.
+
+Overfull \hbox (1.42789pt too wide) in paragraph at lines 397--415
+\OT1/cmr/m/n/12 hood of Pil-sud-ski Square, and frag-ments of Sen-a-torska stre
+et, Krolewska
+ []
+
+[39]
+Overfull \vbox (7.81104pt too high) has occurred while \output is active []
+
+
+[40 <./images//route_p18.png> <./images//route_c18.png>]
+<./images//route_p19.png, id=337, 1078.0275pt x 641.39626pt>
+File: ./images//route_p19.png Graphic file (type png)
+<use ./images//route_p19.png>
+Package pdftex.def Info: ./images//route_p19.png  used on input line 421.
+(pdftex.def)             Requested size: 370.49881pt x 220.44026pt.
+<./images//route_c19.png, id=338, 1076.52188pt x 640.64343pt>
+File: ./images//route_c19.png Graphic file (type png)
+<use ./images//route_c19.png>
+Package pdftex.def Info: ./images//route_c19.png  used on input line 428.
+(pdftex.def)             Requested size: 370.49881pt x 220.48457pt.
+
+Overfull \hbox (3.1688pt too wide) in paragraph at lines 416--434
+[]\OT1/cmr/bx/n/12 18.10.2023 \OT1/cmr/m/n/12 Short scan that in-cluded "Sol-i-
+darno^^Ssci" av-enue, Jana Paw la
+ []
+
+[41 <./images//route_p19.png> <./images//route_c19.png>] [42]
+(Warsaw_scanning_report.aux)
 Package rerunfilecheck Info: File `Warsaw_scanning_report.out' has not changed.
 
 (rerunfilecheck)             Checksum: 0CCA1B1EBD317B5A408292ED6D68C3A8;1525.
  ) 
 Here is how much of TeX's memory you used:
- 10119 strings out of 476331
- 165996 string characters out of 5804174
+ 10246 strings out of 476331
+ 168518 string characters out of 5804174
  1856660 words of memory out of 5000000
- 30399 multiletter control sequences out of 15000+600000
+ 30508 multiletter control sequences out of 15000+600000
  515179 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,77p,985b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -539,9 +616,9 @@ Here is how much of TeX's memory you used:
 ublic/amsfonts/cm/cmr10.pfb><S:/MikTex/fonts/type1/public/amsfonts/cm/cmr12.pfb
 ><S:/MikTex/fonts/type1/public/amsfonts/cm/cmr17.pfb><S:/MikTex/fonts/type1/pub
 lic/amsfonts/cm/cmtt12.pfb>
-Output written on Warsaw_scanning_report.pdf (32 pages, 34346289 bytes).
+Output written on Warsaw_scanning_report.pdf (42 pages, 42645753 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
+ 273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
