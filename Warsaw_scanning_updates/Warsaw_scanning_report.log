@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  18 OCT 2023 22:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  20 OCT 2023 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -585,40 +585,70 @@ Overfull \vbox (7.81104pt too high) has occurred while \output is active []
 <./images//route_p19.png, id=337, 1078.0275pt x 641.39626pt>
 File: ./images//route_p19.png Graphic file (type png)
 <use ./images//route_p19.png>
-Package pdftex.def Info: ./images//route_p19.png  used on input line 421.
+Package pdftex.def Info: ./images//route_p19.png  used on input line 422.
 (pdftex.def)             Requested size: 370.49881pt x 220.44026pt.
 <./images//route_c19.png, id=338, 1076.52188pt x 640.64343pt>
 File: ./images//route_c19.png Graphic file (type png)
 <use ./images//route_c19.png>
-Package pdftex.def Info: ./images//route_c19.png  used on input line 428.
+Package pdftex.def Info: ./images//route_c19.png  used on input line 429.
 (pdftex.def)             Requested size: 370.49881pt x 220.48457pt.
 
-Overfull \hbox (3.1688pt too wide) in paragraph at lines 416--434
+Overfull \hbox (3.1688pt too wide) in paragraph at lines 416--435
 []\OT1/cmr/bx/n/12 18.10.2023 \OT1/cmr/m/n/12 Short scan that in-cluded "Sol-i-
 darno^^Ssci" av-enue, Jana Paw la
  []
 
-[41 <./images//route_p19.png> <./images//route_c19.png>] [42]
+[41] [42 <./images//route_p19.png> <./images//route_c19.png>]
+<./images//route_p20.png, id=351, 664.73344pt x 654.94687pt>
+File: ./images//route_p20.png Graphic file (type png)
+<use ./images//route_p20.png>
+Package pdftex.def Info: ./images//route_p20.png  used on input line 442.
+(pdftex.def)             Requested size: 269.10095pt x 265.1421pt.
+<./images//route_c20.png, id=352, 621.82312pt x 648.92438pt>
+File: ./images//route_c20.png Graphic file (type png)
+<use ./images//route_c20.png>
+Package pdftex.def Info: ./images//route_c20.png  used on input line 449.
+(pdftex.def)             Requested size: 269.10095pt x 280.82426pt.
+ [43]
+Overfull \vbox (18.66634pt too high) has occurred while \output is active []
+
+
+[44 <./images//route_p20.png> <./images//route_c20.png>]
+<./images//route_p21.png, id=366, 876.27374pt x 655.69969pt>
+File: ./images//route_p21.png Graphic file (type png)
+<use ./images//route_p21.png>
+Package pdftex.def Info: ./images//route_p21.png  used on input line 461.
+(pdftex.def)             Requested size: 350.99762pt x 262.64542pt.
+<./images//route_c21.png, id=367, 878.53218pt x 663.22781pt>
+File: ./images//route_c21.png Graphic file (type png)
+<use ./images//route_c21.png>
+Package pdftex.def Info: ./images//route_c21.png  used on input line 468.
+(pdftex.def)             Requested size: 350.99762pt x 264.98282pt.
+ [45]
+Overfull \vbox (0.3282pt too high) has occurred while \output is active []
+
+
+[46 <./images//route_p21.png> <./images//route_c21.png>] [47]
 (Warsaw_scanning_report.aux)
 Package rerunfilecheck Info: File `Warsaw_scanning_report.out' has not changed.
 
 (rerunfilecheck)             Checksum: 0CCA1B1EBD317B5A408292ED6D68C3A8;1525.
  ) 
 Here is how much of TeX's memory you used:
- 10246 strings out of 476331
- 168518 string characters out of 5804174
+ 10309 strings out of 476331
+ 169775 string characters out of 5804174
  1856660 words of memory out of 5000000
- 30508 multiletter control sequences out of 15000+600000
+ 30562 multiletter control sequences out of 15000+600000
  515179 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,77p,985b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,77p,985b,622s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <S:/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><S:/MikTex/fonts/type1/p
 ublic/amsfonts/cm/cmr10.pfb><S:/MikTex/fonts/type1/public/amsfonts/cm/cmr12.pfb
 ><S:/MikTex/fonts/type1/public/amsfonts/cm/cmr17.pfb><S:/MikTex/fonts/type1/pub
 lic/amsfonts/cm/cmtt12.pfb>
-Output written on Warsaw_scanning_report.pdf (42 pages, 42645753 bytes).
+Output written on Warsaw_scanning_report.pdf (47 pages, 46203990 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 93 named destinations out of 1000 (max. 500000)
- 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 431 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
+ 293 words of extra memory for PDF output out of 10000 (max. 10000000)
 
