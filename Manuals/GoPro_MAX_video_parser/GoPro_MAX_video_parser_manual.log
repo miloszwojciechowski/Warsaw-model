@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  12 SEP 2023 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  30 OCT 2023 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -656,22 +656,28 @@ File: ./images//run4.png Graphic file (type png)
 <use ./images//run4.png>
 Package pdftex.def Info: ./images//run4.png  used on input line 336.
 (pdftex.def)             Requested size: 288.50134pt x 27.439pt.
-<./images//window1.png, id=275, 376.40625pt x 261.22594pt>
+<./images//window1.png, id=275, 416.30531pt x 283.81032pt>
 File: ./images//window1.png Graphic file (type png)
 <use ./images//window1.png>
 Package pdftex.def Info: ./images//window1.png  used on input line 345.
-(pdftex.def)             Requested size: 288.50134pt x 200.23576pt.
+(pdftex.def)             Requested size: 288.50134pt x 196.6911pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26 <./images//run2.png> <./images//run3.png> <./images//run4.png>]
-<./images//window2.png, id=285, 443.40656pt x 260.47313pt>
+Overfull \hbox (3.01001pt too wide) in paragraph at lines 353--354
+\T1/cmr/m/n/12 (for the dif-fer-ence check []$\T1/cmtt/m/n/12 https : / / gopro
+ . com / content / dam / help /
+ []
+
+[27 <./images//window1.png>]
+<./images//window2.png, id=293, 621.82312pt x 315.42844pt>
 File: ./images//window2.png Graphic file (type png)
 <use ./images//window2.png>
-Package pdftex.def Info: ./images//window2.png  used on input line 361.
-(pdftex.def)             Requested size: 288.50134pt x 169.48438pt.
- [27 <./images//window1.png>] [28 <./images//window2.png>] (GoPro_MAX_video_par
-ser_manual.aux)
+Package pdftex.def Info: ./images//window2.png  used on input line 362.
+(pdftex.def)             Requested size: 288.50134pt x 146.34541pt.
+ [28 <./images//window2.png>]
+(GoPro_MAX_video_parser_manual.aux)
 Package rerunfilecheck Info: File `GoPro_MAX_video_parser_manual.out' has not c
 hanged.
 (rerunfilecheck)             Checksum: 12D30EEF977013B15278CD174251EB58;2189.
@@ -683,7 +689,7 @@ Here is how much of TeX's memory you used:
  30196 multiletter control sequences out of 15000+600000
  524262 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,76p,500b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,76p,500b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
 ti1200.pk> <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
 pi600\ecbx1728.pk> <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
@@ -696,9 +702,9 @@ pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Ba
 zylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\
 Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.
 pk>
-Output written on GoPro_MAX_video_parser_manual.pdf (29 pages, 7724459 bytes).
+Output written on GoPro_MAX_video_parser_manual.pdf (29 pages, 7732694 bytes).
 PDF statistics:
- 685 PDF objects out of 1000 (max. 8388607)
+ 692 PDF objects out of 1000 (max. 8388607)
  87 named destinations out of 1000 (max. 500000)
  235 words of extra memory for PDF output out of 10000 (max. 10000000)
 

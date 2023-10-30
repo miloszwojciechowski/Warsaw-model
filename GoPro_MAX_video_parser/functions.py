@@ -32,9 +32,9 @@ def start_server(port, directory):
     httpd.daemon_threads = True
     httpd.serve_forever()
 
-# Function to get file name without extension from the path
-def getFilename(path):
-  return os.path.splitext(os.path.basename(path))[0]
+# Function to get file name with path without extension
+def stripExtension(path):
+  return os.path.splitext(path)[0]
 
 # Function to extract frames from a video file:
 ## window - required to display processing on app's window
@@ -50,12 +50,13 @@ def framesExtract(vidFile, dir, intervalSeconds, interval):
 
   os.system(f"start /wait cmd /c {command}")
 
-# Function that runs extractor.js program, if it is not present in the same directory as this program, error window pops out:
-## file - path to video file
+# Function that runs extractor.js program:
+## vidFile - path to video file
+## extractorDir - extractor.js from gopro telemetry extractor directory
 def telemetryExtract(vidFile, extractorDir):
   vidFile = vidFile[:-3]+'LRV'
 
-  completed_process = subprocess.run(['node', extractorDir] + [vidFile] + [os.getcwd()], capture_output=True, text=True)
+  completed_process = subprocess.run(['node', extractorDir] + [vidFile] + [os.path.dirname(vidFile)], capture_output=True, text=True)
   if completed_process.stderr:
     messagebox.showwarning(title='WARNING', message='Couldn\'t extract telemetry data.')
 
@@ -94,16 +95,22 @@ def coord_popup(dataframe, title, row_index):
 
   return table_html
 
-def visualization(videoFile, framesDir, intervalSeconds, frameStep):
+# Main function that creates the map and gives location to frames:
+# videoFile - file containing a video
+# framesDir - folder directory to save frames
+# videoType - variable to tell if program is working on normal video or on timeLapse
+# intervalSeconds - variable to recognize if program is run using number of frames as measurement between extracted
+# frames or seconds between extracted frames, True is for seconds, False is for frames
+def visualization(videoFile, framesDir, intervalSeconds, frameStep, timeLapseInterval=1):
   PORT = 7777
   server_thread = threading.Thread(target=start_server, args=(PORT, framesDir))
   server_thread.daemon = True  # Thread will end as soon as we close the program
   server_thread.start()
 
   # Create pandas dataframe from telemetry file
-  csv = getFilename(videoFile) + '_telemetry.csv'
-
+  csv = stripExtension(videoFile) + '_telemetry.csv'
   telemetry = pd.read_csv(csv)
+
   # Format date
   telemetry['date'] = pd.to_datetime(telemetry['date']).dt.strftime('%d-%m-%Y %H:%m:%S %Z')
 
@@ -114,29 +121,37 @@ def visualization(videoFile, framesDir, intervalSeconds, frameStep):
   videoFrames = natsorted([join(f'http://localhost:{PORT}', f) for f in listdir(framesDir) if isfile(join(framesDir, f))])
 
   # Get time period between extracted frames (in milliseconds since that's the unit of timestamp in GoPro camera)
-  if intervalSeconds:
-    tmPeriod = frameStep * 1000 #multiplied by 1000 to receive milliseconds
+  print("Interval: ",timeLapseInterval,'\n', timeLapseInterval * 1000)
+  if timeLapseInterval != 0:
+    tmPeriod = timeLapseInterval * 1000
   else:
-    fps = getFPS(videoFile)
-    tmPeriod = (frameStep/fps) * 1000 #multiplied by 1000 to receive milliseconds
+    if intervalSeconds:
+      tmPeriod = frameStep * 1000 #multiplied by 1000 to receive milliseconds
+    else:
+      fps = getFPS(videoFile)
+      tmPeriod = (frameStep/fps) * 1000 #multiplied by 1000 to receive milliseconds
 
   frameRows = [] # list to keep row numbers of those that have frame path
   millisecond = 0
   for i in range(len(videoFrames)):
-    closestPoint = (telemetry['timestamp'] - millisecond).abs().idxmin() # each iteration find the closest point to each frame
+    print("Ms:", millisecond)
+    closestPointRow = (telemetry['timestamp'] - millisecond).abs().idxmin() # each iteration find the closest point to each frame
                                                                          # by comparing timestamp and time of frame
-    telemetry.at[closestPoint, 'images'] = videoFrames[i] # add frame path to column 'images' for chosen row
+    print('closest Point Row: ',closestPointRow)
+    telemetry.at[closestPointRow, 'images'] = videoFrames[i] # add frame path to column 'images' for chosen row
+    print(telemetry.at[closestPointRow, 'images'])
+    print('')
 
-    frameRows.append(closestPoint) # add row index of row that has image path
+    frameRows.append(closestPointRow) # add row index of row that has image path
     millisecond += tmPeriod # increase by period between each frame
 
-  #telemetry.to_csv(f'dataframe{intervalSeconds}1.csv')
+  telemetry.to_csv(f'{stripExtension(videoFile)}dataframe_{intervalSeconds}.csv')
 
   # Tuple with x, y coordinates
   points = tuple(zip(telemetry["latitude"].values, telemetry["longitude"].values))
 
   # Define map and add layers
-  mymap = folium.Map(location=[telemetry.latitude.mean(), telemetry.longitude.mean()], zoom_start=13, max_zoom = 30, tiles=None )
+  mymap = folium.Map(location=[telemetry.latitude.mean(), telemetry.longitude.mean()], zoom_start=13, max_zoom = 19, tiles=None )
   folium.TileLayer('openstreetmap', name ='OpenStreetMap').add_to(mymap)
   folium.TileLayer(tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                    attr='Esri', name='Esri Satellite', overlay=False, control=True).add_to(mymap)
@@ -177,4 +192,4 @@ def visualization(videoFile, framesDir, intervalSeconds, frameStep):
     folium.Circle(location=points[frameRows[i]], radius=3, fill_color='#F58A1F', fill_opacity=0.8, color="black", weight=1, tooltip=f'Frame{i}',
                   popup=popup).add_to(mymap)
 
-  open_map(f'map_{getFilename(videoFile)}.html', mymap)
+  open_map(f'map_{stripExtension(os.path.basename(videoFile))}.html', mymap)

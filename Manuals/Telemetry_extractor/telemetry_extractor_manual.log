@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  12 SEP 2023 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  30 OCT 2023 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,12 +331,6 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 (S:\MikTex\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-Overfull \hbox (18.06934pt too wide) in paragraph at lines 22--23
-\T1/cmr/m/n/12 from the video. Csv file name tem-plate is: [][]\T1/cmtt/m/n/12 
-<video file name>_telemetry.csv[]\T1/cmr/m/n/12 . 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
@@ -367,23 +361,31 @@ Overfull \vbox (5.41737pt too high) has occurred while \output is active []
 
 ]
 Chapter 3.
-<./images//GoPro_manual_fragment.png, id=119, 191.9672pt x 103.13531pt>
-File: ./images//GoPro_manual_fragment.png Graphic file (type png)
-<use ./images//GoPro_manual_fragment.png>
-Package pdftex.def Info: ./images//GoPro_manual_fragment.png  used on input lin
-e 64.
-(pdftex.def)             Requested size: 191.96672pt x 103.13504pt.
+
+! LaTeX Error: File `GoPro_manual_fragment' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 		\includegraphics{GoPro_manual_fragment}
+                                              
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-[9 <./images//GoPro_manual_fragment.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
@@ -393,16 +395,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
-<./images//camera_connected.jpg, id=129, 308.352pt x 173.448pt>
-File: ./images//camera_connected.jpg Graphic file (type jpg)
-<use ./images//camera_connected.jpg>
-Package pdftex.def Info: ./images//camera_connected.jpg  used on input line 92.
 
-(pdftex.def)             Requested size: 308.35124pt x 173.44757pt.
+! LaTeX Error: File `camera_connected' not found.
 
-Underfull \vbox (badness 2671) has occurred while \output is active []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 	\includegraphics{camera_connected}
+                                        
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
- [10]
+
 Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
@@ -417,21 +424,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-<./images//recording_location.png, id=136, 455.45157pt x 223.58531pt>
-File: ./images//recording_location.png Graphic file (type png)
-<use ./images//recording_location.png>
-Package pdftex.def Info: ./images//recording_location.png  used on input line 1
-05.
-(pdftex.def)             Requested size: 455.45045pt x 223.58475pt.
 
-Overfull \hbox (65.45045pt too wide) in paragraph at lines 105--106
- [][] 
- []
+! LaTeX Error: File `recording_location' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 	\includegraphics{recording_location}
+                                           
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11 <./images//camera_connected.jpg>]
 Overfull \hbox (17.6084pt too wide) in paragraph at lines 109--110
 []\T1/cmr/m/n/12 360 videos' names and their LRV ver-sions start with GS e.g. G
 S020007.360,
@@ -447,48 +454,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-[12 <./images//recording_location.png>]
+[10] [11] [12
+
+]
 Chapter 4.
-<./images//git_install1.png, id=154, 371.88937pt x 294.34969pt>
-File: ./images//git_install1.png Graphic file (type png)
-<use ./images//git_install1.png>
-Package pdftex.def Info: ./images//git_install1.png  used on input line 122.
-(pdftex.def)             Requested size: 288.50134pt x 228.35219pt.
-<./images//git_install2.png, id=155, 373.395pt x 292.84406pt>
-File: ./images//git_install2.png Graphic file (type png)
-<use ./images//git_install2.png>
-Package pdftex.def Info: ./images//git_install2.png  used on input line 131.
-(pdftex.def)             Requested size: 288.50134pt x 226.27258pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+! LaTeX Error: File `git_install1' not found.
 
- [13
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 ...raphics[width=.8\linewidth]{git_install1}
+                                                  %
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
- <./images//git_install1.png>]
-<./images//git_install3.png, id=164, 373.395pt x 294.34969pt>
-File: ./images//git_install3.png Graphic file (type png)
-<use ./images//git_install3.png>
-Package pdftex.def Info: ./images//git_install3.png  used on input line 139.
-(pdftex.def)             Requested size: 288.50134pt x 227.43594pt.
-<./images//git_install4.png, id=165, 371.13657pt x 291.33844pt>
-File: ./images//git_install4.png Graphic file (type png)
-<use ./images//git_install4.png>
-Package pdftex.def Info: ./images//git_install4.png  used on input line 147.
-(pdftex.def)             Requested size: 288.50134pt x 226.474pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+! LaTeX Error: File `git_install2' not found.
 
- [14 <./images//git_install2.png> <./images//git_install3.png>]
-<./images//git_install5.png, id=175, 372.64218pt x 291.33844pt>
-File: ./images//git_install5.png Graphic file (type png)
-<use ./images//git_install5.png>
-Package pdftex.def Info: ./images//git_install5.png  used on input line 154.
-(pdftex.def)             Requested size: 288.50134pt x 225.56268pt.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 ...raphics[width=.8\linewidth]{git_install2}
+                                                  %
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-Underfull \vbox (badness 3803) has occurred while \output is active []
 
- [15 <./images//git_install4.png> <./images//git_install5.png>]
-<./images//nodejs_install.png, id=186, 455.45157pt x 216.05719pt>
+! LaTeX Error: File `git_install3' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...raphics[width=.8\linewidth]{git_install3}
+                                                  %
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `git_install4' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 ...raphics[width=.8\linewidth]{git_install4}
+                                                  %
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `git_install5' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154 ...raphics[width=.8\linewidth]{git_install5}
+                                                  %
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[13]
+<./images//nodejs_install.png, id=162, 455.45157pt x 216.05719pt>
 File: ./images//nodejs_install.png Graphic file (type png)
 <use ./images//nodejs_install.png>
 Package pdftex.def Info: ./images//nodejs_install.png  used on input line 167.
@@ -498,23 +539,23 @@ Overfull \hbox (65.45045pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
-<./images//node_install0.png, id=187, 369.7815pt x 287.27325pt>
+<./images//node_install0.png, id=164, 369.7815pt x 287.27325pt>
 File: ./images//node_install0.png Graphic file (type png)
 <use ./images//node_install0.png>
 Package pdftex.def Info: ./images//node_install0.png  used on input line 173.
 (pdftex.def)             Requested size: 288.50134pt x 224.14674pt.
-<./images//node_install1.png, id=188, 370.38374pt x 289.68225pt>
+<./images//node_install1.png, id=165, 370.38374pt x 289.68225pt>
 File: ./images//node_install1.png Graphic file (type png)
 <use ./images//node_install1.png>
 Package pdftex.def Info: ./images//node_install1.png  used on input line 181.
 (pdftex.def)             Requested size: 288.50134pt x 225.64182pt.
-[16 <./images//nodejs_install.png> <./images//node_install0.png>]
-<./images//node_install2.png, id=197, 369.17924pt x 286.671pt>
+[14 <./images//nodejs_install.png> <./images//node_install0.png>]
+<./images//node_install2.png, id=174, 369.17924pt x 286.671pt>
 File: ./images//node_install2.png Graphic file (type png)
 <use ./images//node_install2.png>
 Package pdftex.def Info: ./images//node_install2.png  used on input line 189.
 (pdftex.def)             Requested size: 288.50134pt x 224.03552pt.
-<./images//node_install3.png, id=198, 369.17924pt x 287.8755pt>
+<./images//node_install3.png, id=175, 369.17924pt x 287.8755pt>
 File: ./images//node_install3.png Graphic file (type png)
 <use ./images//node_install3.png>
 Package pdftex.def Info: ./images//node_install3.png  used on input line 197.
@@ -522,8 +563,8 @@ Package pdftex.def Info: ./images//node_install3.png  used on input line 197.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./images//node_install1.png> <./images//node_install2.png>]
-<./images//node_install4.png, id=205, 370.38374pt x 289.68225pt>
+ [15 <./images//node_install1.png> <./images//node_install2.png>]
+<./images//node_install4.png, id=182, 370.38374pt x 289.68225pt>
 File: ./images//node_install4.png Graphic file (type png)
 <use ./images//node_install4.png>
 Package pdftex.def Info: ./images//node_install4.png  used on input line 205.
@@ -531,14 +572,14 @@ Package pdftex.def Info: ./images//node_install4.png  used on input line 205.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./images//node_install3.png> <./images//node_install4.png>]
-<./images//node_confirmation.png, id=213, 216.81pt x 54.9553pt>
+ [16 <./images//node_install3.png> <./images//node_install4.png>]
+<./images//node_confirmation.png, id=189, 216.81pt x 54.9553pt>
 File: ./images//node_confirmation.png Graphic file (type png)
 <use ./images//node_confirmation.png>
 Package pdftex.def Info: ./images//node_confirmation.png  used on input line 21
 4.
 (pdftex.def)             Requested size: 216.80946pt x 54.95515pt.
- [19 <./images//node_confirmation.png>] [20
+ [17 <./images//node_confirmation.png>] [18
 
 ]
 Chapter 5.
@@ -548,12 +589,12 @@ Overfull \hbox (21.33275pt too wide) in paragraph at lines 223--224
 hub . com / miloszwojciechowski /
  []
 
-<./images//run1.png, id=226, 746.03719pt x 365.86688pt>
+<./images//run1.png, id=203, 746.03719pt x 365.86688pt>
 File: ./images//run1.png Graphic file (type png)
 <use ./images//run1.png>
 Package pdftex.def Info: ./images//run1.png  used on input line 227.
 (pdftex.def)             Requested size: 288.50134pt x 141.48164pt.
-<./images//run2.png, id=227, 435.12563pt x 275.52937pt>
+<./images//run2.png, id=204, 435.12563pt x 275.52937pt>
 File: ./images//run2.png Graphic file (type png)
 <use ./images//run2.png>
 Package pdftex.def Info: ./images//run2.png  used on input line 235.
@@ -568,12 +609,12 @@ m/it/12 recursive
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <./images//run1.png>]
+ [19 <./images//run1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-[22 <./images//run2.png>]
+[20 <./images//run2.png>]
 Overfull \hbox (62.74394pt too wide) in paragraph at lines 253--255
 \T1/cmr/m/n/12 " [][]\T1/cmtt/m/n/12 node S:\GoPro-Telemetry-Extractor\extracto
 r.js GS020007.LRV[]\T1/cmr/m/n/12 ...")) 
@@ -612,19 +653,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--276
 
  []
 
-[23] [24] (telemetry_extractor_manual.aux)
+[21] [22] (telemetry_extractor_manual.aux)
 Package rerunfilecheck Info: File `telemetry_extractor_manual.out' has not chan
 ged.
 (rerunfilecheck)             Checksum: 871B4C4FDAFFEED491DF6EEA3B12C56A;1912.
  ) 
 Here is how much of TeX's memory you used:
- 9877 strings out of 476331
- 157935 string characters out of 5804174
+ 10036 strings out of 476331
+ 161200 string characters out of 5804174
  1857660 words of memory out of 5000000
- 30107 multiletter control sequences out of 15000+600000
+ 30257 multiletter control sequences out of 15000+600000
  524577 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,76p,543b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,76p,502b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
 it1200.pk> <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
 pi600\ecti1200.pk> <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
@@ -638,9 +679,9 @@ zylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\
 Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.
 pk> <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
 crm2074.pk>
-Output written on telemetry_extractor_manual.pdf (25 pages, 1021105 bytes).
+Output written on telemetry_extractor_manual.pdf (23 pages, 761649 bytes).
 PDF statistics:
- 646 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
- 187 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 619 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 

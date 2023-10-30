@@ -32,7 +32,7 @@ Basic functionality may be expanded by using GoPro Telemetry extractor program w
 	\item Data visualization on a map
 \end{itemize}
 
-\underline{Extended input is:} basic input + GoPro Telemetry extractor program program location and .LRV version of a video you are extracting frames from. LRV video has to be located in the same directory as the video you've chosen using "Choose video file" button. If you don't know what .LRV video is go to \hyperref[sec:video]{GoPro video types section}\\
+\underline{Extended input is:} basic input + GoPro Telemetry extractor program location and .LRV version of a video you are extracting frames from. LRV video has to be located in the same directory as the video you've chosen using "Choose video file" button. If you don't know what .LRV video is go to \hyperref[sec:video]{GoPro video types section}\\
 
 \underline{Extended output is:} basic output + a csv file containing telemetry data (date, timestamp, latitude, longitude and altitude) and visualization on a map using map html file.
 
@@ -350,9 +350,10 @@ Below is provided an installation instruction for PyCharm, but you can install I
 	There can be seen a few buttons and an input area:
 	\begin{itemize}
 		\item \textbf{Choose video file} - open file explorer and select video file. As opposed to telemetry extractor it is recommended to avoid .LRV file since extracted frames should be the highest possible quality.
+		\item \textbf{Video type} - choose whether you parse normal video or time lapse (for the difference check \url{https://gopro.com/content/dam/help/max/manuals/MAX_UM_ENG_REVB.pdf}). If time lapse is chosen, pass the interval (in seconds) you chose on your GoPro camera (default is 0.5s), additionaly the saved frame step choice is locked and the only possible one is Frames.
 		\item \textbf{Choose Frames save director}y - open file explorer and choose directory which extracted frames will be saved to. Make sure chosen folder is empty or create a new empty one.
 		\item \textbf{Saved frame step} - first decide whether passed value should be number of seconds between extracted frames or number of frames between extracting extracted frames  e.g. when set to Seconds and number 30 is passed the program will extract one frame every 30 seconds but when set to Frames the program will extract one frame every 30 frames, so for video recorded in 30 FPS program will extract a frame every one second.
-		\item \textbf{Pass the extractor.js localization} - to use only when Telemetry extractor was installed. Open file explorer and choose extractor.js localization, if not passed warning will pop up asking whether to run the application without extractor.js. If answered yes, only frames will be extracted.
+		\item \textbf{Pass the extractor.js localization} - to use only when Telemetry extractor was installed. Open file explorer and choose extractor.js localization (when using program with this function remember to put both .mov and .LRV files in the same folder), if not passed,  warning will pop up asking whether to run the application without extractor.js. If answered yes, only frames will be extracted.
 		\item \textbf{Start} - run the program, before that make sure you filled all the needed data (video file, save directory and frame step). If running with extractor.js make sure that .LRV file is in the same directory as video file you provided via "Choose video file" button.
 	\end{itemize}
 	\item \begin{minipage}[t]{\linewidth}
@@ -362,7 +363,7 @@ Below is provided an installation instruction for PyCharm, but you can install I
 		}		
 		\medskip	
 	\end{minipage}
-	After filling all the needed data press "Run" button. A console will open showing frames extraction process. If you want to stop it, press "Q". If extractor.js was provided csv file with telemetry data will appear in the folder with main.py file and the map will open.\\
+	After filling all the needed data press "Run" button. A console will open showing frames extraction process. If you want to stop it, press "Q". If extractor.js was provided csv file with telemetry data will appear in the folder with the provided video file and the map will open.\\
 	If you run into \textbf{Couldn't extract telemetry data} error it might be caused by one of the below:
 	\begin{itemize}
 		\item No .LRV file in the folder
