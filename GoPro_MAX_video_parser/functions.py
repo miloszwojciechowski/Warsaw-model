@@ -129,7 +129,7 @@ def visualization(videoFile, framesDir, intervalSeconds, frameStep, timeLapseInt
       fps = getFPS(videoFile)
       tmPeriod = (frameStep/fps) * 1000 #multiplied by 1000 to receive milliseconds
   else:
-    tmPeriod = timeLapseInterval * 1000
+    tmPeriod = timeLapseInterval * frameStep * 1000
 
   frameRows = [] # list to keep row numbers of those that have frame path
   millisecond = 0
