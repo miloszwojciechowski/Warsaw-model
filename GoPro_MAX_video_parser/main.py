@@ -29,7 +29,6 @@ def showTimeLapse():
   secRbutton.config(state=DISABLED)
   frameRButton.config(state=DISABLED)
   frameRButton.select()
-  print(videoVar.get())
 
 #Function that undo changes made by showTimeLapse, it is run when user again chooses normal video type
 def hideTimeLapse():
@@ -38,7 +37,6 @@ def hideTimeLapse():
   timeLapseIntervalEntry.delete(0,END)
   secRbutton.config(state=NORMAL)
   frameRButton.config(state=NORMAL)
-  print(videoVar.get())
 
 def on_closing():
   if messagebox.askokcancel("Quit", "Do you want to quit?"):
@@ -85,10 +83,12 @@ def run():
     def run_visualization():
       # Wait for unlocking lock after run_ffmpeg ends
       lock.acquire()
-      print("VideoVar: ", videoVar.get())
-      if videoVar:
+
+      if videoVar.get():
+        print("Run with normal video, ", videoVar.get())
         visualization(filename, directory, stepVar.get(), int(entry.get()))
       else:
+        print("Run with time lapse", videoVar.get())
         visualization(filename, directory, stepVar.get(), int(entry.get()), float(timeLapseIntervalEntry.get()))
       stateLabel.config(text='Map generated')
       lock.release()

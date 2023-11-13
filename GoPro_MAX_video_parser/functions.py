@@ -98,9 +98,9 @@ def coord_popup(dataframe, title, row_index):
 # Main function that creates the map and gives location to frames:
 # videoFile - file containing a video
 # framesDir - folder directory to save frames
-# videoType - variable to tell if program is working on normal video or on timeLapse
-# intervalSeconds - variable to recognize if program is run using number of frames as measurement between extracted
-# frames or seconds between extracted frames, True is for seconds, False is for frames
+# intervalSeconds - variable to recognize if program is run using number of frames as measurement between extracted, True is for seconds, False is for frames
+# frameStep - frames or seconds between extracted frames
+# timeLapseInterval - variable to tell if program is working on normal video or on timeLapse, default value is normal video
 def visualization(videoFile, framesDir, intervalSeconds, frameStep, timeLapseInterval=1):
   PORT = 7777
   server_thread = threading.Thread(target=start_server, args=(PORT, framesDir))
@@ -118,34 +118,40 @@ def visualization(videoFile, framesDir, intervalSeconds, frameStep, timeLapseInt
   telemetry['images'] = ''
 
   # Create a list of frames' paths
+  videoFramesFilePaths = natsorted([join(framesDir, f) for f in listdir(framesDir) if isfile(join(framesDir, f))])
   videoFrames = natsorted([join(f'http://localhost:{PORT}', f) for f in listdir(framesDir) if isfile(join(framesDir, f))])
 
   # Get time period between extracted frames (in milliseconds since that's the unit of timestamp in GoPro camera)
-  print("Interval: ",timeLapseInterval,'\n', timeLapseInterval * 1000)
-  if timeLapseInterval != 0:
-    tmPeriod = timeLapseInterval * 1000
-  else:
+  if timeLapseInterval == 1:
     if intervalSeconds:
       tmPeriod = frameStep * 1000 #multiplied by 1000 to receive milliseconds
     else:
       fps = getFPS(videoFile)
       tmPeriod = (frameStep/fps) * 1000 #multiplied by 1000 to receive milliseconds
+  else:
+    tmPeriod = timeLapseInterval * 1000
 
   frameRows = [] # list to keep row numbers of those that have frame path
   millisecond = 0
+
+  # First loop is to export frames file paths to csv, second is to replace them with local server ones and project to map
   for i in range(len(videoFrames)):
-    print("Ms:", millisecond)
     closestPointRow = (telemetry['timestamp'] - millisecond).abs().idxmin() # each iteration find the closest point to each frame
                                                                          # by comparing timestamp and time of frame
-    print('closest Point Row: ',closestPointRow)
-    telemetry.at[closestPointRow, 'images'] = videoFrames[i] # add frame path to column 'images' for chosen row
-    print(telemetry.at[closestPointRow, 'images'])
-    print('')
+    telemetry.at[closestPointRow, 'images'] = videoFramesFilePaths[i] # add frame path to column 'images' for chosen row
 
     frameRows.append(closestPointRow) # add row index of row that has image path
     millisecond += tmPeriod # increase by period between each frame
 
-  telemetry.to_csv(f'{stripExtension(videoFile)}dataframe_{intervalSeconds}.csv')
+  telemetry.to_csv(f'{stripExtension(videoFile)}_GPS_{frameStep}.csv')
+
+  # Replace file path for the local server ones
+  imageCounter = 0
+
+  for i in range(len(telemetry)):
+    if len(telemetry.iloc[i, -1]) != 0:
+      telemetry.iloc[i, -1] = videoFrames[imageCounter]
+      imageCounter += 1
 
   # Tuple with x, y coordinates
   points = tuple(zip(telemetry["latitude"].values, telemetry["longitude"].values))
