@@ -21,6 +21,8 @@
 \chapter{Introduction}
 GoPro MAX video parser manual basic functionality is to extract equirectangular frames (every N frames or every N seconds) from a GoPro MAX spherical video and to do so the only things required are this program and an equirectangular video file.\\
 
+\section{Input/Output}
+
 \underline{Basic input is:} video file, directory to save frames, interval defining step between saved frames (in seconds or in frames).\\
 
 \underline{Basic output:} folder with extracted frames.\\
@@ -34,7 +36,31 @@ Basic functionality may be expanded by using GoPro Telemetry extractor program w
 
 \underline{Extended input is:} basic input + GoPro Telemetry extractor program location and .LRV version of a video you are extracting frames from. LRV video has to be located in the same directory as the video you've chosen using "Choose video file" button. If you don't know what .LRV video is go to \hyperref[sec:video]{GoPro video types section}\\
 
-\underline{Extended output is:} basic output + a csv file containing telemetry data (date, timestamp, latitude, longitude and altitude) and visualization on a map using map html file.
+\underline{Extended output is:} basic output + a csv file containing telemetry data (date, timestamp, latitude, longitude and altitude) + csv file with frames attached to their coordinates (it resembles telemetry csv, but has 2 additional columns: cts and images, former is a timestamp column calculated by the program using GoPro time register and the latter contains extracted frames paths) and visualization on a map using map html file.
+
+\section{File structure}
+\begin{itemize}
+	\item Telemetry file:
+	\begin{enumerate}
+		\item Date: year-month-day T hour:minute:second.millisecond Z
+		\item Timestamp: in milliseconds
+		\item Latitude: in degrees in WGS84
+		\item Longitude: in degrees in WGS84
+		\item Altitude: in meters
+	\end{enumerate}
+	
+	\item GPS file:
+	\begin{enumerate}
+		\item Column without a name, index column created during video processing
+		\item Date: year-month-day T hour:minute:second.millisecond Z
+		\item Timestamp: in milliseconds
+		\item Latitude: in degrees in WGS84
+		\item Longitude: in degrees in WGS84
+		\item Altitude: in meters
+		\item Cts: timestamp calculated from Date column, in milliseconds
+		\item Images: paths to frames located in a computer memory
+	\end{enumerate}
+\end{itemize}
 
 \pagebreak
 List of requirements:
@@ -363,11 +389,11 @@ Below is provided an installation instruction for PyCharm, but you can install I
 		}		
 		\medskip	
 	\end{minipage}
-	After filling all the needed data press "Run" button. A console will open showing frames extraction process. If you want to stop it, press "Q". If extractor.js was provided csv file with telemetry data will appear in the folder with the provided video file and the map will open.\\
+	After filling all the needed data press "Run" button. A console will open showing frames extraction process. If you want to stop it, press "Q". If extractor.js was provided, a csv file with telemetry data will appear in the directory of the provided video along with a csv frames file. Additionally a map will open, which has the source file in the folder Maps created in video parser directory after the first usage.\\
 	If you run into \textbf{Couldn't extract telemetry data} error it might be caused by one of the below:
 	\begin{itemize}
 		\item No .LRV file in the folder
-		\item Csv file telemetry is saved to is not closed
+		\item Telemetry csv file is not closed
 	\end{itemize}
 \end{enumerate}
 \end{document}

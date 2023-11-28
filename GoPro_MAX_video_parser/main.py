@@ -5,19 +5,19 @@ from tkinter import filedialog
 # Open file explorer to choose video file to process
 def searchFiles():
   global filename
-  filename = filedialog.askopenfilename(initialdir = "/", title = "Select a File")
+  filename = filedialog.askopenfilename(title = "Select a File")
   labelFile.config(text="Chosen video file path: " + filename)
 
 # Open file explorer to choose directory to save frames
 def searchDirectory():
   global directory
-  directory = filedialog.askdirectory(initialdir = "/", title = "Select a Directory to save your frames")
+  directory = filedialog.askdirectory(title = "Select a Directory to save your frames")
   labelDir.config(text="Chosen save directory path: " + directory)
 
 # Open file explorer to find exctractor.js file
 def findExtractor():
   global extractor
-  extractor = filedialog.askopenfilename(initialdir = "/", title = "Provide extractor.js file")
+  extractor = filedialog.askopenfilename(title = "Provide extractor.js file")
   labelExtractor.config(text="Extractor.js location:" + extractor)
 
 # Function that will be run when Time lapse is chosen as video type, it gives additional option and changes options
@@ -54,6 +54,7 @@ def run():
   visualizeBool = False
 
   if 'extractor' not in globals():
+    print("No extractor")
     if messagebox.askokcancel("Run without telemetry extractor", "Do you want to run the program without extraction telemetry and thus without visualization?"):
       pass
     else:
@@ -85,10 +86,10 @@ def run():
       lock.acquire()
 
       if videoVar.get():
-        print("Run with normal video, ", videoVar.get())
+        print("Ran with normal video")
         visualization(filename, directory, stepVar.get(), int(entry.get()))
       else:
-        print("Run with time lapse", videoVar.get())
+        print("Ran with time lapse")
         visualization(filename, directory, stepVar.get(), int(entry.get()), float(timeLapseIntervalEntry.get()))
       stateLabel.config(text='Map generated')
       lock.release()

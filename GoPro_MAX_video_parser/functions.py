@@ -1,7 +1,9 @@
 import cv2
+import copy
 import folium
 from folium.plugins import *
 from natsort import natsorted
+import numpy as np
 import os
 from os import listdir
 from os.path import isfile, join
@@ -59,6 +61,7 @@ def telemetryExtract(vidFile, extractorDir):
   completed_process = subprocess.run(['node', extractorDir] + [vidFile] + [os.path.dirname(vidFile)], capture_output=True, text=True)
   if completed_process.stderr:
     messagebox.showwarning(title='WARNING', message='Couldn\'t extract telemetry data.')
+    return
 
 def getFPS(videoFile):
   videocap = cv2.VideoCapture(videoFile)
@@ -83,10 +86,10 @@ def open_map(path, f_map):
 
 # Definition of folium popup that displays telemetry data of the point
 def coord_popup(dataframe, title, row_index):
-  img_src = dataframe.iloc[row_index,5]
+  img_src = dataframe.iloc[row_index,6]
 
   table_html = f"<h3 style='text-align:center'>{title}</h3><table style='width:100%'>"
-  table_html += dataframe.iloc[row_index,:5].to_frame().to_html(header=False, justify='center')
+  table_html += dataframe.iloc[row_index,:6].to_frame().to_html(header=False, justify='center')
   table_html += "</table>"
   if img_src != '':
     table_html += f"<br><a href='{img_src}' target='_blank'>" \
@@ -111,53 +114,79 @@ def visualization(videoFile, framesDir, intervalSeconds, frameStep, timeLapseInt
   csv = stripExtension(videoFile) + '_telemetry.csv'
   telemetry = pd.read_csv(csv)
 
+  dateColumn = telemetry['date']
+
+  # strip date only to time
+  dateColumn = dateColumn.str[11:23]
+
+  # One time use function to change time values to their milliseconds value
+  def timeToMillisec(stringTime):
+    ms = int(stringTime[0:2]) * 3600000 + int(stringTime[3:5]) * 60000 + int(stringTime[6:8]) * 1000 + int(
+      stringTime[9:12])
+    return ms
+
+  dateColumn = dateColumn.apply(timeToMillisec)
+
+  # Create new column based on calculated timestamp
+  telemetry['cts'] = dateColumn
+
+  # Change column type to integer
+  telemetry['cts'] = telemetry['cts'].astype(int)
+
+  # subtract 1st record to receive milliseconds timestamp
+  telemetry['cts'] = telemetry['cts'] - telemetry.at[0, 'cts']
+
   # Format date
-  telemetry['date'] = pd.to_datetime(telemetry['date']).dt.strftime('%d-%m-%Y %H:%m:%S %Z')
+  #telemetry['date'] = pd.to_datetime(telemetry['date']).dt.strftime('%d-%m-%Y %H:%M:%S %Z')
 
   # Add column for video frames files
   telemetry['images'] = ''
 
-  # Create a list of frames' paths
+  # Create dataframe copy for map display
+  mapTelemetry = copy.deepcopy(telemetry)
+
+  # Create a list of frames' paths on a computer and for the map display
   videoFramesFilePaths = natsorted([join(framesDir, f) for f in listdir(framesDir) if isfile(join(framesDir, f))])
-  videoFrames = natsorted([join(f'http://localhost:{PORT}', f) for f in listdir(framesDir) if isfile(join(framesDir, f))])
+  mapVideoFrames = natsorted([join(f'http://localhost:{PORT}', f) for f in listdir(framesDir) if isfile(join(framesDir, f))])
 
   # Get time period between extracted frames (in milliseconds since that's the unit of timestamp in GoPro camera)
   if timeLapseInterval == 1:
     if intervalSeconds:
       tmPeriod = frameStep * 1000 #multiplied by 1000 to receive milliseconds
+      stepLabel = 'Seconds'
     else:
       fps = getFPS(videoFile)
       tmPeriod = (frameStep/fps) * 1000 #multiplied by 1000 to receive milliseconds
+      stepLabel = 'Frames'
   else:
     tmPeriod = timeLapseInterval * frameStep * 1000
+    stepLabel = 'Frames'
 
   frameRows = [] # list to keep row numbers of those that have frame path
   millisecond = 0
 
-  # First loop is to export frames file paths to csv, second is to replace them with local server ones and project to map
-  for i in range(len(videoFrames)):
-    closestPointRow = (telemetry['timestamp'] - millisecond).abs().idxmin() # each iteration find the closest point to each frame
-                                                                         # by comparing timestamp and time of frame
+  previousClosest = 0
+
+  # Match frames with their coordinates based on timestamp
+  for i in range(len(videoFramesFilePaths)):
+    closestPointRow = (telemetry[previousClosest:]['cts'] - millisecond).abs().idxmin() # each iteration find the closest point to each frame
+
     telemetry.at[closestPointRow, 'images'] = videoFramesFilePaths[i] # add frame path to column 'images' for chosen row
+    mapTelemetry.at[closestPointRow, 'images'] = mapVideoFrames[i] # save paths for map displaying
 
     frameRows.append(closestPointRow) # add row index of row that has image path
+
+    previousClosest = closestPointRow  # save row to which frame was assigned in order to begin next searching for the
+                                       # coordinates from that row to reduce searching range
     millisecond += tmPeriod # increase by period between each frame
 
-  telemetry.to_csv(f'{stripExtension(videoFile)}_GPS_{frameStep}.csv')
-
-  # Replace file path for the local server ones
-  imageCounter = 0
-
-  for i in range(len(telemetry)):
-    if len(telemetry.iloc[i, -1]) != 0:
-      telemetry.iloc[i, -1] = videoFrames[imageCounter]
-      imageCounter += 1
+  telemetry.to_csv(f'{stripExtension(videoFile)}_GPS_{frameStep}_{stepLabel}.csv')
 
   # Tuple with x, y coordinates
-  points = tuple(zip(telemetry["latitude"].values, telemetry["longitude"].values))
+  points = tuple(zip(mapTelemetry["latitude"].values, mapTelemetry["longitude"].values))
 
   # Define map and add layers
-  mymap = folium.Map(location=[telemetry.latitude.mean(), telemetry.longitude.mean()], zoom_start=13, max_zoom = 19, tiles=None )
+  mymap = folium.Map(location=[mapTelemetry.latitude.mean(), mapTelemetry.longitude.mean()], zoom_start=13, max_zoom = 19, tiles=None )
   folium.TileLayer('openstreetmap', name ='OpenStreetMap').add_to(mymap)
   folium.TileLayer(tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
                    attr='Esri', name='Esri Satellite', overlay=False, control=True).add_to(mymap)
@@ -180,22 +209,25 @@ def visualization(videoFile, framesDir, intervalSeconds, frameStep, timeLapseInt
   folium.PolyLine(points, color='red', weight=4.5, opacity=1).add_to(mymap)
 
   # Create start marker and its popup
-  startIFrame = folium.IFrame(html=coord_popup(telemetry, 'Start point', 0), width=400, height=410)
+  startIFrame = folium.IFrame(html=coord_popup(mapTelemetry, 'Start point', 0), width=400, height=410)
   startPopup = folium.Popup(startIFrame, max_width=500)
-  folium.Marker(location=points[0], popup=startPopup, tooltip='Star point',
+  folium.Marker(location=points[0], popup=startPopup, tooltip='Start point',
                         icon=folium.Icon(icon='circle-play', prefix='fa')).add_to(mymap)
 
   # Create end marker and its popup
-  endIFrame = folium.IFrame(html= coord_popup(telemetry, 'End point', -1), width=300, height=220)
+  endIFrame = folium.IFrame(html= coord_popup(mapTelemetry, 'End point', -1), width=300, height=220)
   endPopup = folium.Popup(endIFrame, max_width=400)
   folium.Marker(location=points[-1], popup=endPopup, tooltip='End point',
                       icon=folium.Icon(icon='flag-checkered', prefix='fa')).add_to(mymap)
 
   # Create points containing frames
-  for i in range(1, len(videoFrames)):
-    iframe = folium.IFrame(html=coord_popup(telemetry, f'Frame{i}', frameRows[i]), width=400, height=410)
+  for i in range(1, len(mapVideoFrames)):
+    iframe = folium.IFrame(html=coord_popup(mapTelemetry, f'Frame{i}', frameRows[i]), width=400, height=410)
     popup = folium.Popup(iframe, max_width=500)
     folium.Circle(location=points[frameRows[i]], radius=3, fill_color='#F58A1F', fill_opacity=0.8, color="black", weight=1, tooltip=f'Frame{i}',
                   popup=popup).add_to(mymap)
 
-  open_map(f'map_{stripExtension(os.path.basename(videoFile))}.html', mymap)
+  mapPath = os.getcwd() + '//Maps'
+  if not os.path.exists(mapPath): # check if Maps folder exists in video parser directory, if not, create it
+    os.makedirs(mapPath)
+  open_map(f'{mapPath}//map_{stripExtension(os.path.basename(videoFile))}.html', mymap)
