@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  7 DEC 2023 19:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  21 JAN 2024 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,84 +361,91 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Chapter 1.
 
-Overfull \hbox (127.48904pt too wide) in paragraph at lines 32--34
-\OT1/cmr/m/n/12 ([][]$\OT1/cmtt/m/n/12 https : / / www . geoportal . gov . pl /
- pl / dane / baza-[]danych-[]obiektow-[]topograficznych-[]bdot10k/$[][]\OT1/cmr
-/m/n/12 )
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--34
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
 
-Overfull \hbox (7.22466pt too wide) in paragraph at lines 48--48
+Underfull \vbox (badness 3780) has occurred while \output is active []
+
+ [5]
+Overfull \hbox (7.22466pt too wide) in paragraph at lines 59--59
 []|\OT1/cmtt/m/n/12 Mandeye scanner output files and files created by HDMapping
 | 
  []
 
-[5]
-Overfull \hbox (6.04317pt too wide) in paragraph at lines 52--53
+
+Overfull \hbox (6.04317pt too wide) in paragraph at lines 63--64
 []\OT1/cmr/m/n/12 GoPro folder - for Go-Pro data (ex-tracted frames, record-ing
  files, GPS.csv
  []
 
 
-Overfull \hbox (110.66977pt too wide) in paragraph at lines 55--56
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Overfull \hbox (110.66977pt too wide) in paragraph at lines 67--68
 \OT1/cmr/m/n/12 ad-di-tional 2 columns (cts and im-ages). Full name scheme is: 
 [][]\OT1/cmtt/m/n/12 GSXXXXXX_GPS_Interval_Value
  []
 
 
-Overfull \hbox (17.63435pt too wide) in paragraph at lines 66--67
+Overfull \hbox (17.63435pt too wide) in paragraph at lines 78--79
 [][][]\OT1/cmtt/m/n/12 GSXXXXXX_telemetry file []\OT1/cmr/m/n/12 - csv file con
 -tain-ing teleme-try data. XXXXXX
  []
 
-[6]
-<./images//Routes.png, id=118, 845.00308pt x 839.20213pt>
+<./images//Routes.png, id=113, 845.00308pt x 839.20213pt>
 File: ./images//Routes.png Graphic file (type png)
 <use ./images//Routes.png>
-Package pdftex.def Info: ./images//Routes.png  used on input line 80.
+Package pdftex.def Info: ./images//Routes.png  used on input line 92.
 (pdftex.def)             Requested size: 390.0pt x 387.31819pt.
-<./images//Scan_zones.png, id=120, 731.73375pt x 668.4975pt>
+
+Underfull \vbox (badness 6268) has occurred while \output is active []
+
+ [7]
+<./images//Scan_zones.png, id=133, 731.73375pt x 668.4975pt>
 File: ./images//Scan_zones.png Graphic file (type png)
 <use ./images//Scan_zones.png>
-Package pdftex.def Info: ./images//Scan_zones.png  used on input line 86.
+Package pdftex.def Info: ./images//Scan_zones.png  used on input line 98.
 (pdftex.def)             Requested size: 390.0pt x 356.30127pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./images//Routes.png>] [8 <./images//Scan_zones.png>]
+ [8 <./images//Routes.png>] [9 <./images//Scan_zones.png>]
 \openout2 = `Plan_table.aux'.
 
- (Plan_table.tex) [9] [10
+ (Plan_table.tex) [10]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+<./images//cloud0.png, id=213, 976.39781pt x 502.87875pt>
+File: ./images//cloud0.png Graphic file (type png)
+<use ./images//cloud0.png>
+Package pdftex.def Info: ./images//cloud0.png  used on input line 113.
+(pdftex.def)             Requested size: 390.0pt x 200.86401pt.
+<./images//route_p0.png, id=214, 872.50969pt x 577.40718pt>
+File: ./images//route_p0.png Graphic file (type png)
+<use ./images//route_p0.png>
+Package pdftex.def Info: ./images//route_p0.png  used on input line 120.
+(pdftex.def)             Requested size: 350.99762pt x 232.28035pt.
+<./images//route_c0.png, id=215, 733.23938pt x 625.58719pt>
+File: ./images//route_c0.png Graphic file (type png)
+<use ./images//route_c0.png>
+Package pdftex.def Info: ./images//route_c0.png  used on input line 127.
+(pdftex.def)             Requested size: 350.99762pt x 299.46706pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11
 
 
 
 
 ]
-Chapter 2.
-<./images//cloud0.png, id=205, 976.39781pt x 502.87875pt>
-File: ./images//cloud0.png Graphic file (type png)
-<use ./images//cloud0.png>
-Package pdftex.def Info: ./images//cloud0.png  used on input line 100.
-(pdftex.def)             Requested size: 390.0pt x 200.86401pt.
-<./images//route_p0.png, id=206, 872.50969pt x 577.40718pt>
-File: ./images//route_p0.png Graphic file (type png)
-<use ./images//route_p0.png>
-Package pdftex.def Info: ./images//route_p0.png  used on input line 107.
-(pdftex.def)             Requested size: 350.99762pt x 232.28035pt.
-<./images//route_c0.png, id=207, 733.23938pt x 625.58719pt>
-File: ./images//route_c0.png Graphic file (type png)
-<use ./images//route_c0.png>
-Package pdftex.def Info: ./images//route_c0.png  used on input line 114.
-(pdftex.def)             Requested size: 350.99762pt x 299.46706pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12 <./images//cloud0.png>]
@@ -446,20 +453,20 @@ Overfull \vbox (4.44737pt too high) has occurred while \output is active []
 
 
 [13 <./images//route_p0.png> <./images//route_c0.png>]
-<./images//cloud1.png, id=227, 976.39781pt x 524.71031pt>
+<./images//cloud1.png, id=237, 976.39781pt x 524.71031pt>
 File: ./images//cloud1.png Graphic file (type png)
 <use ./images//cloud1.png>
-Package pdftex.def Info: ./images//cloud1.png  used on input line 124.
+Package pdftex.def Info: ./images//cloud1.png  used on input line 137.
 (pdftex.def)             Requested size: 390.0pt x 209.58415pt.
-<./images//route_p1.png, id=228, 760.34062pt x 562.35094pt>
+<./images//route_p1.png, id=238, 760.34062pt x 562.35094pt>
 File: ./images//route_p1.png Graphic file (type png)
 <use ./images//route_p1.png>
-Package pdftex.def Info: ./images//route_p1.png  used on input line 131.
+Package pdftex.def Info: ./images//route_p1.png  used on input line 144.
 (pdftex.def)             Requested size: 343.2019pt x 253.83643pt.
-<./images//route_c1.png, id=229, 758.08218pt x 635.37375pt>
+<./images//route_c1.png, id=239, 758.08218pt x 635.37375pt>
 File: ./images//route_c1.png Graphic file (type png)
 <use ./images//route_c1.png>
-Package pdftex.def Info: ./images//route_c1.png  used on input line 138.
+Package pdftex.def Info: ./images//route_c1.png  used on input line 151.
 (pdftex.def)             Requested size: 343.2019pt x 287.65094pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -469,49 +476,47 @@ Overfull \vbox (14.18733pt too high) has occurred while \output is active []
 
 
 [15 <./images//route_p1.png> <./images//route_c1.png>]
-Overfull \hbox (124.53937pt too wide) in paragraph at lines 148--150
-\OT1/cmr/m/n/12 Scans con-ducted: [][]\OT1/cmtt/m/n/12 continousScanning_0002[]
-\OT1/cmr/m/n/12 , [][]\OT1/cmtt/m/n/12 continousScanning_0003[]\OT1/cmr/m/n/12 
-, [][]\OT1/cmtt/m/n/12 continousScanning_0004[]\OT1/cmr/m/n/12 ,
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
  []
 
-<./images//cloud2.png, id=243, 973.38657pt x 461.47406pt>
+<./images//cloud2.png, id=255, 973.38657pt x 461.47406pt>
 File: ./images//cloud2.png Graphic file (type png)
 <use ./images//cloud2.png>
-Package pdftex.def Info: ./images//cloud2.png  used on input line 154.
+Package pdftex.def Info: ./images//cloud2.png  used on input line 168.
 (pdftex.def)             Requested size: 390.0pt x 184.89616pt.
-<./images//route_p2.png, id=244, 602.25pt x 481.04718pt>
+<./images//route_p2.png, id=256, 602.25pt x 481.04718pt>
 File: ./images//route_p2.png Graphic file (type png)
 <use ./images//route_p2.png>
-Package pdftex.def Info: ./images//route_p2.png  used on input line 161.
+Package pdftex.def Info: ./images//route_p2.png  used on input line 175.
 (pdftex.def)             Requested size: 350.99762pt x 280.37283pt.
-<./images//route_c2.png, id=245, 769.37437pt x 576.65437pt>
+<./images//route_c2.png, id=257, 769.37437pt x 576.65437pt>
 File: ./images//route_c2.png Graphic file (type png)
 <use ./images//route_c2.png>
-Package pdftex.def Info: ./images//route_c2.png  used on input line 168.
+Package pdftex.def Info: ./images//route_c2.png  used on input line 182.
 (pdftex.def)             Requested size: 350.99762pt x 263.08206pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7273) has occurred while \output is active []
 
  [16 <./images//cloud2.png>]
 Overfull \vbox (16.15486pt too high) has occurred while \output is active []
 
 
 [17 <./images//route_p2.png> <./images//route_c2.png>]
-<./images//cloud3.png, id=259, 968.11688pt x 491.58656pt>
+<./images//cloud3.png, id=273, 968.11688pt x 491.58656pt>
 File: ./images//cloud3.png Graphic file (type png)
 <use ./images//cloud3.png>
-Package pdftex.def Info: ./images//cloud3.png  used on input line 178.
+Package pdftex.def Info: ./images//cloud3.png  used on input line 192.
 (pdftex.def)             Requested size: 390.0pt x 198.03383pt.
-<./images//route_p3.png, id=260, 981.6675pt x 655.69969pt>
+<./images//route_p3.png, id=274, 981.6675pt x 655.69969pt>
 File: ./images//route_p3.png Graphic file (type png)
 <use ./images//route_p3.png>
-Package pdftex.def Info: ./images//route_p3.png  used on input line 185.
+Package pdftex.def Info: ./images//route_p3.png  used on input line 199.
 (pdftex.def)             Requested size: 370.49881pt x 247.46759pt.
-<./images//route_c3.png, id=261, 951.555pt x 609.02531pt>
+<./images//route_c3.png, id=275, 951.555pt x 609.02531pt>
 File: ./images//route_c3.png Graphic file (type png)
 <use ./images//route_c3.png>
-Package pdftex.def Info: ./images//route_c3.png  used on input line 192.
+Package pdftex.def Info: ./images//route_c3.png  used on input line 206.
 (pdftex.def)             Requested size: 370.49881pt x 237.1286pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -520,20 +525,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19 <./images//route_p3.png> <./images//route_c3.png>]
-<./images//cloud4.png, id=276, 976.39781pt x 514.17094pt>
+<./images//cloud4.png, id=292, 976.39781pt x 514.17094pt>
 File: ./images//cloud4.png Graphic file (type png)
 <use ./images//cloud4.png>
-Package pdftex.def Info: ./images//cloud4.png  used on input line 203.
+Package pdftex.def Info: ./images//cloud4.png  used on input line 217.
 (pdftex.def)             Requested size: 390.0pt x 205.37445pt.
-<./images//route_p4.png, id=277, 1153.30875pt x 630.10406pt>
+<./images//route_p4.png, id=293, 1153.30875pt x 630.10406pt>
 File: ./images//route_p4.png Graphic file (type png)
 <use ./images//route_p4.png>
-Package pdftex.def Info: ./images//route_p4.png  used on input line 210.
+Package pdftex.def Info: ./images//route_p4.png  used on input line 224.
 (pdftex.def)             Requested size: 390.0pt x 213.0788pt.
-<./images//route_c4.png, id=278, 787.44188pt x 491.58656pt>
+<./images//route_c4.png, id=294, 787.44188pt x 491.58656pt>
 File: ./images//route_c4.png Graphic file (type png)
 <use ./images//route_c4.png>
-Package pdftex.def Info: ./images//route_c4.png  used on input line 217.
+Package pdftex.def Info: ./images//route_c4.png  used on input line 231.
 (pdftex.def)             Requested size: 390.0pt x 243.46736pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -542,20 +547,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21 <./images//route_p4.png> <./images//route_c4.png>]
-<./images//cloud5.png, id=292, 973.38657pt x 512.66531pt>
+<./images//cloud5.png, id=310, 973.38657pt x 512.66531pt>
 File: ./images//cloud5.png Graphic file (type png)
 <use ./images//cloud5.png>
-Package pdftex.def Info: ./images//cloud5.png  used on input line 228.
+Package pdftex.def Info: ./images//cloud5.png  used on input line 242.
 (pdftex.def)             Requested size: 390.0pt x 205.40668pt.
-<./images//route_p5.png, id=293, 436.63126pt x 380.17032pt>
+<./images//route_p5.png, id=311, 436.63126pt x 380.17032pt>
 File: ./images//route_p5.png Graphic file (type png)
 <use ./images//route_p5.png>
-Package pdftex.def Info: ./images//route_p5.png  used on input line 235.
+Package pdftex.def Info: ./images//route_p5.png  used on input line 249.
 (pdftex.def)             Requested size: 312.00119pt x 271.65729pt.
-<./images//route_c5.png, id=294, 755.82375pt x 646.66594pt>
+<./images//route_c5.png, id=312, 755.82375pt x 646.66594pt>
 File: ./images//route_c5.png Graphic file (type png)
 <use ./images//route_c5.png>
-Package pdftex.def Info: ./images//route_c5.png  used on input line 242.
+Package pdftex.def Info: ./images//route_c5.png  used on input line 256.
 (pdftex.def)             Requested size: 312.00119pt x 266.94046pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -565,20 +570,20 @@ Overfull \vbox (11.29771pt too high) has occurred while \output is active []
 
 
 [23 <./images//route_p5.png> <./images//route_c5.png>]
-<./images//cloud6.png, id=308, 976.39781pt x 511.9125pt>
+<./images//cloud6.png, id=328, 976.39781pt x 511.9125pt>
 File: ./images//cloud6.png Graphic file (type png)
 <use ./images//cloud6.png>
-Package pdftex.def Info: ./images//cloud6.png  used on input line 252.
+Package pdftex.def Info: ./images//cloud6.png  used on input line 266.
 (pdftex.def)             Requested size: 390.0pt x 204.47235pt.
-<./images//route_p6.png, id=309, 551.05875pt x 515.67656pt>
+<./images//route_p6.png, id=329, 551.05875pt x 515.67656pt>
 File: ./images//route_p6.png Graphic file (type png)
 <use ./images//route_p6.png>
-Package pdftex.def Info: ./images//route_p6.png  used on input line 259.
+Package pdftex.def Info: ./images//route_p6.png  used on input line 273.
 (pdftex.def)             Requested size: 312.00119pt x 291.97942pt.
-<./images//route_c6.png, id=310, 795.72281pt x 605.26125pt>
+<./images//route_c6.png, id=330, 795.72281pt x 605.26125pt>
 File: ./images//route_c6.png Graphic file (type png)
 <use ./images//route_c6.png>
-Package pdftex.def Info: ./images//route_c6.png  used on input line 266.
+Package pdftex.def Info: ./images//route_c6.png  used on input line 280.
 (pdftex.def)             Requested size: 312.00119pt x 237.3162pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -588,31 +593,24 @@ Overfull \vbox (1.99557pt too high) has occurred while \output is active []
 
 
 [25 <./images//route_p6.png> <./images//route_c6.png>]
-Overfull \hbox (124.53937pt too wide) in paragraph at lines 276--277
-\OT1/cmr/m/n/12 Scans con-ducted: [][]\OT1/cmtt/m/n/12 continousScanning_0007[]
-\OT1/cmr/m/n/12 , [][]\OT1/cmtt/m/n/12 continousScanning_0008[]\OT1/cmr/m/n/12 
-, [][]\OT1/cmtt/m/n/12 continousScanning_0009[]\OT1/cmr/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
-<./images//cloud7.png, id=325, 974.89218pt x 539.76656pt>
+<./images//cloud7.png, id=347, 974.89218pt x 539.76656pt>
 File: ./images//cloud7.png Graphic file (type png)
 <use ./images//cloud7.png>
-Package pdftex.def Info: ./images//cloud7.png  used on input line 281.
+Package pdftex.def Info: ./images//cloud7.png  used on input line 295.
 (pdftex.def)             Requested size: 390.0pt x 215.9275pt.
-<./images//route_p7.png, id=326, 644.4075pt x 636.12656pt>
+<./images//route_p7.png, id=348, 644.4075pt x 636.12656pt>
 File: ./images//route_p7.png Graphic file (type png)
 <use ./images//route_p7.png>
-Package pdftex.def Info: ./images//route_p7.png  used on input line 288.
+Package pdftex.def Info: ./images//route_p7.png  used on input line 302.
 (pdftex.def)             Requested size: 292.5pt x 288.74887pt.
-<./images//route_c7.png, id=327, 788.9475pt x 655.69969pt>
+<./images//route_c7.png, id=349, 788.9475pt x 655.69969pt>
 File: ./images//route_c7.png Graphic file (type png)
 <use ./images//route_c7.png>
-Package pdftex.def Info: ./images//route_c7.png  used on input line 295.
+Package pdftex.def Info: ./images//route_c7.png  used on input line 309.
 (pdftex.def)             Requested size: 292.5pt x 243.09534pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -622,20 +620,20 @@ Overfull \vbox (4.54417pt too high) has occurred while \output is active []
 
 
 [27 <./images//route_p7.png> <./images//route_c7.png>]
-<./images//cloud8.png, id=341, 976.39781pt x 429.85594pt>
+<./images//cloud8.png, id=365, 976.39781pt x 429.85594pt>
 File: ./images//cloud8.png Graphic file (type png)
 <use ./images//cloud8.png>
-Package pdftex.def Info: ./images//cloud8.png  used on input line 305.
+Package pdftex.def Info: ./images//cloud8.png  used on input line 319.
 (pdftex.def)             Requested size: 390.0pt x 171.69664pt.
-<./images//route_p8.png, id=342, 550.30594pt x 496.10344pt>
+<./images//route_p8.png, id=366, 550.30594pt x 496.10344pt>
 File: ./images//route_p8.png Graphic file (type png)
 <use ./images//route_p8.png>
-Package pdftex.def Info: ./images//route_p8.png  used on input line 312.
+Package pdftex.def Info: ./images//route_p8.png  used on input line 326.
 (pdftex.def)             Requested size: 323.70071pt x 291.82794pt.
-<./images//route_c8.png, id=343, 749.80125pt x 570.63188pt>
+<./images//route_c8.png, id=367, 749.80125pt x 570.63188pt>
 File: ./images//route_c8.png Graphic file (type png)
 <use ./images//route_c8.png>
-Package pdftex.def Info: ./images//route_c8.png  used on input line 319.
+Package pdftex.def Info: ./images//route_c8.png  used on input line 333.
 (pdftex.def)             Requested size: 323.70071pt x 246.35083pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -645,20 +643,20 @@ Overfull \vbox (10.87874pt too high) has occurred while \output is active []
 
 
 [29 <./images//route_p8.png> <./images//route_c8.png>]
-<./images//cloud9.png, id=357, 976.39781pt x 540.51938pt>
+<./images//cloud9.png, id=383, 976.39781pt x 540.51938pt>
 File: ./images//cloud9.png Graphic file (type png)
 <use ./images//cloud9.png>
-Package pdftex.def Info: ./images//cloud9.png  used on input line 329.
+Package pdftex.def Info: ./images//cloud9.png  used on input line 343.
 (pdftex.def)             Requested size: 390.0pt x 215.89876pt.
-<./images//route_p9.png, id=358, 736.25063pt x 546.54187pt>
+<./images//route_p9.png, id=384, 736.25063pt x 546.54187pt>
 File: ./images//route_p9.png Graphic file (type png)
 <use ./images//route_p9.png>
-Package pdftex.def Info: ./images//route_p9.png  used on input line 336.
+Package pdftex.def Info: ./images//route_p9.png  used on input line 350.
 (pdftex.def)             Requested size: 362.69714pt x 269.2506pt.
-<./images//route_c9.png, id=359, 731.73375pt x 539.76656pt>
+<./images//route_c9.png, id=385, 731.73375pt x 539.76656pt>
 File: ./images//route_c9.png Graphic file (type png)
 <use ./images//route_c9.png>
-Package pdftex.def Info: ./images//route_c9.png  used on input line 343.
+Package pdftex.def Info: ./images//route_c9.png  used on input line 357.
 (pdftex.def)             Requested size: 362.69714pt x 267.54355pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -668,20 +666,20 @@ Overfull \vbox (9.49411pt too high) has occurred while \output is active []
 
 
 [31 <./images//route_p9.png> <./images//route_c9.png>]
-<./images//cloud10.png, id=374, 977.15062pt x 449.42906pt>
+<./images//cloud10.png, id=402, 977.15062pt x 449.42906pt>
 File: ./images//cloud10.png Graphic file (type png)
 <use ./images//cloud10.png>
-Package pdftex.def Info: ./images//cloud10.png  used on input line 353.
+Package pdftex.def Info: ./images//cloud10.png  used on input line 367.
 (pdftex.def)             Requested size: 390.0pt x 179.37753pt.
-<./images//route_p10.png, id=375, 824.32968pt x 660.96938pt>
+<./images//route_p10.png, id=403, 824.32968pt x 660.96938pt>
 File: ./images//route_p10.png Graphic file (type png)
 <use ./images//route_p10.png>
-Package pdftex.def Info: ./images//route_p10.png  used on input line 360.
+Package pdftex.def Info: ./images//route_p10.png  used on input line 374.
 (pdftex.def)             Requested size: 350.99762pt x 281.43776pt.
-<./images//route_c10.png, id=376, 827.34094pt x 590.95781pt>
+<./images//route_c10.png, id=404, 827.34094pt x 590.95781pt>
 File: ./images//route_c10.png Graphic file (type png)
 <use ./images//route_c10.png>
-Package pdftex.def Info: ./images//route_c10.png  used on input line 367.
+Package pdftex.def Info: ./images//route_c10.png  used on input line 381.
 (pdftex.def)             Requested size: 350.99762pt x 250.7164pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -691,20 +689,20 @@ Overfull \vbox (4.85413pt too high) has occurred while \output is active []
 
 
 [33 <./images//route_p10.png> <./images//route_c10.png>]
-<./images//cloud11.png, id=390, 976.39781pt x 490.08093pt>
+<./images//cloud11.png, id=420, 976.39781pt x 490.08093pt>
 File: ./images//cloud11.png Graphic file (type png)
 <use ./images//cloud11.png>
-Package pdftex.def Info: ./images//cloud11.png  used on input line 377.
+Package pdftex.def Info: ./images//cloud11.png  used on input line 391.
 (pdftex.def)             Requested size: 390.0pt x 195.75221pt.
-<./images//route_p11.png, id=391, 598.48593pt x 482.55281pt>
+<./images//route_p11.png, id=421, 598.48593pt x 482.55281pt>
 File: ./images//route_p11.png Graphic file (type png)
 <use ./images//route_p11.png>
-Package pdftex.def Info: ./images//route_p11.png  used on input line 384.
+Package pdftex.def Info: ./images//route_p11.png  used on input line 398.
 (pdftex.def)             Requested size: 343.2019pt x 276.72203pt.
-<./images//route_c11.png, id=392, 826.58812pt x 632.3625pt>
+<./images//route_c11.png, id=422, 826.58812pt x 632.3625pt>
 File: ./images//route_c11.png Graphic file (type png)
 <use ./images//route_c11.png>
-Package pdftex.def Info: ./images//route_c11.png  used on input line 391.
+Package pdftex.def Info: ./images//route_c11.png  used on input line 405.
 (pdftex.def)             Requested size: 343.2019pt x 262.56064pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -714,54 +712,47 @@ Overfull \vbox (11.98264pt too high) has occurred while \output is active []
 
 
 [35 <./images//route_p11.png> <./images//route_c11.png>]
-Overfull \hbox (124.53937pt too wide) in paragraph at lines 401--402
-\OT1/cmr/m/n/12 Scans con-ducted: [][]\OT1/cmtt/m/n/12 continousScanning_0012[]
-\OT1/cmr/m/n/12 , [][]\OT1/cmtt/m/n/12 continousScanning_0013[]\OT1/cmr/m/n/12 
-, [][]\OT1/cmtt/m/n/12 continousScanning_0014[]\OT1/cmr/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
-<./images//cloud12.png, id=406, 974.89218pt x 510.40688pt>
+<./images//cloud12.png, id=438, 974.89218pt x 510.40688pt>
 File: ./images//cloud12.png Graphic file (type png)
 <use ./images//cloud12.png>
-Package pdftex.def Info: ./images//cloud12.png  used on input line 406.
+Package pdftex.def Info: ./images//cloud12.png  used on input line 420.
 (pdftex.def)             Requested size: 390.0pt x 204.1825pt.
-<./images//route_p12.png, id=407, 772.38562pt x 619.56468pt>
+<./images//route_p12.png, id=439, 772.38562pt x 619.56468pt>
 File: ./images//route_p12.png Graphic file (type png)
 <use ./images//route_p12.png>
-Package pdftex.def Info: ./images//route_p12.png  used on input line 413.
+Package pdftex.def Info: ./images//route_p12.png  used on input line 427.
 (pdftex.def)             Requested size: 300.30167pt x 240.8824pt.
-<./images//route_c12.png, id=408, 648.17157pt x 616.55344pt>
+<./images//route_c12.png, id=440, 648.17157pt x 616.55344pt>
 File: ./images//route_c12.png Graphic file (type png)
 <use ./images//route_c12.png>
-Package pdftex.def Info: ./images//route_c12.png  used on input line 420.
+Package pdftex.def Info: ./images//route_c12.png  used on input line 434.
 (pdftex.def)             Requested size: 300.30167pt x 285.65012pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36 <./images//cloud12.png>]
-<./images//cloud13.png, id=416, 973.38657pt x 539.01375pt>
+<./images//cloud13.png, id=450, 973.38657pt x 539.01375pt>
 File: ./images//cloud13.png Graphic file (type png)
 <use ./images//cloud13.png>
-Package pdftex.def Info: ./images//cloud13.png  used on input line 430.
+Package pdftex.def Info: ./images//cloud13.png  used on input line 444.
 (pdftex.def)             Requested size: 390.0pt x 215.96356pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37 <./images//route_p12.png> <./images//route_c12.png>]
-<./images//route_p13.png, id=424, 917.67844pt x 585.68813pt>
+<./images//route_p13.png, id=458, 917.67844pt x 585.68813pt>
 File: ./images//route_p13.png Graphic file (type png)
 <use ./images//route_p13.png>
-Package pdftex.def Info: ./images//route_p13.png  used on input line 437.
+Package pdftex.def Info: ./images//route_p13.png  used on input line 451.
 (pdftex.def)             Requested size: 350.99762pt x 224.02051pt.
-<./images//route_c13.png, id=425, 842.39719pt x 585.68813pt>
+<./images//route_c13.png, id=459, 842.39719pt x 585.68813pt>
 File: ./images//route_c13.png Graphic file (type png)
 <use ./images//route_c13.png>
-Package pdftex.def Info: ./images//route_c13.png  used on input line 444.
+Package pdftex.def Info: ./images//route_c13.png  used on input line 458.
 (pdftex.def)             Requested size: 350.99762pt x 244.0391pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -770,20 +761,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39 <./images//route_p13.png> <./images//route_c13.png>]
-<./images//cloud14.png, id=439, 974.89218pt x 510.40688pt>
+<./images//cloud14.png, id=475, 974.89218pt x 510.40688pt>
 File: ./images//cloud14.png Graphic file (type png)
 <use ./images//cloud14.png>
-Package pdftex.def Info: ./images//cloud14.png  used on input line 456.
+Package pdftex.def Info: ./images//cloud14.png  used on input line 470.
 (pdftex.def)             Requested size: 390.0pt x 204.1825pt.
-<./images//route_p14.png, id=440, 888.31876pt x 603.75563pt>
+<./images//route_p14.png, id=476, 888.31876pt x 603.75563pt>
 File: ./images//route_p14.png Graphic file (type png)
 <use ./images//route_p14.png>
-Package pdftex.def Info: ./images//route_p14.png  used on input line 463.
+Package pdftex.def Info: ./images//route_p14.png  used on input line 477.
 (pdftex.def)             Requested size: 350.99762pt x 238.55916pt.
-<./images//route_c14.png, id=441, 753.5653pt x 657.95813pt>
+<./images//route_c14.png, id=477, 753.5653pt x 657.95813pt>
 File: ./images//route_c14.png Graphic file (type png)
 <use ./images//route_c14.png>
-Package pdftex.def Info: ./images//route_c14.png  used on input line 470.
+Package pdftex.def Info: ./images//route_c14.png  used on input line 484.
 (pdftex.def)             Requested size: 350.99762pt x 306.4594pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -793,20 +784,20 @@ Overfull \vbox (17.71852pt too high) has occurred while \output is active []
 
 
 [41 <./images//route_p14.png> <./images//route_c14.png>]
-<./images//cloud15.png, id=455, 975.645pt x 540.51938pt>
+<./images//cloud15.png, id=493, 975.645pt x 540.51938pt>
 File: ./images//cloud15.png Graphic file (type png)
 <use ./images//cloud15.png>
-Package pdftex.def Info: ./images//cloud15.png  used on input line 482.
+Package pdftex.def Info: ./images//cloud15.png  used on input line 496.
 (pdftex.def)             Requested size: 390.0pt x 216.0637pt.
-<./images//route_p15.png, id=456, 844.65562pt x 665.48625pt>
+<./images//route_p15.png, id=494, 844.65562pt x 665.48625pt>
 File: ./images//route_p15.png Graphic file (type png)
 <use ./images//route_p15.png>
-Package pdftex.def Info: ./images//route_p15.png  used on input line 489.
+Package pdftex.def Info: ./images//route_p15.png  used on input line 503.
 (pdftex.def)             Requested size: 331.50238pt x 261.18361pt.
-<./images//route_c15.png, id=457, 808.52063pt x 666.23906pt>
+<./images//route_c15.png, id=495, 808.52063pt x 666.23906pt>
 File: ./images//route_c15.png Graphic file (type png)
 <use ./images//route_c15.png>
-Package pdftex.def Info: ./images//route_c15.png  used on input line 496.
+Package pdftex.def Info: ./images//route_c15.png  used on input line 510.
 (pdftex.def)             Requested size: 331.50238pt x 273.16994pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -816,20 +807,20 @@ Overfull \vbox (7.05351pt too high) has occurred while \output is active []
 
 
 [43 <./images//route_p15.png> <./images//route_c15.png>]
-<./images//cloud16.png, id=472, 974.89218pt x 468.24937pt>
+<./images//cloud16.png, id=512, 974.89218pt x 468.24937pt>
 File: ./images//cloud16.png Graphic file (type png)
 <use ./images//cloud16.png>
-Package pdftex.def Info: ./images//cloud16.png  used on input line 508.
+Package pdftex.def Info: ./images//cloud16.png  used on input line 522.
 (pdftex.def)             Requested size: 390.0pt x 187.31786pt.
-<./images//route_p16.png, id=473, 594.72188pt x 642.90187pt>
+<./images//route_p16.png, id=513, 594.72188pt x 642.90187pt>
 File: ./images//route_p16.png Graphic file (type png)
 <use ./images//route_p16.png>
-Package pdftex.def Info: ./images//route_p16.png  used on input line 515.
+Package pdftex.def Info: ./images//route_p16.png  used on input line 529.
 (pdftex.def)             Requested size: 245.7019pt x 265.6025pt.
-<./images//route_c16.png, id=474, 583.42969pt x 639.89063pt>
+<./images//route_c16.png, id=514, 583.42969pt x 639.89063pt>
 File: ./images//route_c16.png Graphic file (type png)
 <use ./images//route_c16.png>
-Package pdftex.def Info: ./images//route_c16.png  used on input line 522.
+Package pdftex.def Info: ./images//route_c16.png  used on input line 536.
 (pdftex.def)             Requested size: 245.7019pt x 269.47475pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -839,24 +830,24 @@ Overfull \vbox (7.7772pt too high) has occurred while \output is active []
 
 
 [45 <./images//route_p16.png> <./images//route_c16.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 532--533
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
 
  []
 
-<./images//cloud17.png, id=488, 974.13937pt x 424.58624pt>
+<./images//cloud17.png, id=530, 974.13937pt x 424.58624pt>
 File: ./images//cloud17.png Graphic file (type png)
 <use ./images//cloud17.png>
-Package pdftex.def Info: ./images//cloud17.png  used on input line 537.
+Package pdftex.def Info: ./images//cloud17.png  used on input line 551.
 (pdftex.def)             Requested size: 390.0pt x 169.9805pt.
-<./images//route_p17.png, id=489, 716.6775pt x 648.92438pt>
+<./images//route_p17.png, id=531, 716.6775pt x 648.92438pt>
 File: ./images//route_p17.png Graphic file (type png)
 <use ./images//route_p17.png>
-Package pdftex.def Info: ./images//route_p17.png  used on input line 544.
+Package pdftex.def Info: ./images//route_p17.png  used on input line 558.
 (pdftex.def)             Requested size: 292.5pt x 264.85269pt.
-<./images//route_c17.png, id=490, 679.03688pt x 636.87938pt>
+<./images//route_c17.png, id=532, 679.03688pt x 636.87938pt>
 File: ./images//route_c17.png Graphic file (type png)
 <use ./images//route_c17.png>
-Package pdftex.def Info: ./images//route_c17.png  used on input line 551.
+Package pdftex.def Info: ./images//route_c17.png  used on input line 565.
 (pdftex.def)             Requested size: 292.5pt x 274.33868pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -866,31 +857,24 @@ Overfull \vbox (11.89134pt too high) has occurred while \output is active []
 
 
 [47 <./images//route_p17.png> <./images//route_c17.png>]
-Overfull \hbox (124.53937pt too wide) in paragraph at lines 560--561
-\OT1/cmr/m/n/12 Scans con-ducted: [][]\OT1/cmtt/m/n/12 continousScanning_0018[]
-\OT1/cmr/m/n/12 , [][]\OT1/cmtt/m/n/12 continousScanning_0019[]\OT1/cmr/m/n/12 
-, [][]\OT1/cmtt/m/n/12 continousScanning_0020[]\OT1/cmr/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
 
  []
 
-<./images//cloud18.png, id=504, 977.15062pt x 512.66531pt>
+<./images//cloud18.png, id=548, 973.38657pt x 540.51938pt>
 File: ./images//cloud18.png Graphic file (type png)
 <use ./images//cloud18.png>
-Package pdftex.def Info: ./images//cloud18.png  used on input line 565.
-(pdftex.def)             Requested size: 390.0pt x 204.6166pt.
-<./images//route_p18.png, id=505, 882.29625pt x 636.87938pt>
+Package pdftex.def Info: ./images//cloud18.png  used on input line 579.
+(pdftex.def)             Requested size: 390.0pt x 216.5668pt.
+<./images//route_p18.png, id=549, 882.29625pt x 636.87938pt>
 File: ./images//route_p18.png Graphic file (type png)
 <use ./images//route_p18.png>
-Package pdftex.def Info: ./images//route_p18.png  used on input line 572.
+Package pdftex.def Info: ./images//route_p18.png  used on input line 586.
 (pdftex.def)             Requested size: 370.49881pt x 267.43892pt.
-<./images//route_c18.png, id=506, 881.54344pt x 636.87938pt>
+<./images//route_c18.png, id=550, 881.54344pt x 636.87938pt>
 File: ./images//route_c18.png Graphic file (type png)
 <use ./images//route_c18.png>
-Package pdftex.def Info: ./images//route_c18.png  used on input line 579.
+Package pdftex.def Info: ./images//route_c18.png  used on input line 593.
 (pdftex.def)             Requested size: 370.49881pt x 267.67215pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -900,43 +884,43 @@ Overfull \vbox (7.81104pt too high) has occurred while \output is active []
 
 
 [49 <./images//route_p18.png> <./images//route_c18.png>]
-<./images//cloud19.png, id=521, 974.89218pt x 512.66531pt>
+<./images//cloud19.png, id=567, 974.89218pt x 512.66531pt>
 File: ./images//cloud19.png Graphic file (type png)
 <use ./images//cloud19.png>
-Package pdftex.def Info: ./images//cloud19.png  used on input line 589.
+Package pdftex.def Info: ./images//cloud19.png  used on input line 603.
 (pdftex.def)             Requested size: 390.0pt x 205.08595pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [50 <./images//cloud19.png>]
-<./images//route_p19.png, id=529, 1078.0275pt x 641.39626pt>
+<./images//route_p19.png, id=575, 1078.0275pt x 641.39626pt>
 File: ./images//route_p19.png Graphic file (type png)
 <use ./images//route_p19.png>
-Package pdftex.def Info: ./images//route_p19.png  used on input line 597.
+Package pdftex.def Info: ./images//route_p19.png  used on input line 611.
 (pdftex.def)             Requested size: 370.49881pt x 220.44026pt.
-<./images//route_c19.png, id=530, 1076.52188pt x 640.64343pt>
+<./images//route_c19.png, id=576, 1076.52188pt x 640.64343pt>
 File: ./images//route_c19.png Graphic file (type png)
 <use ./images//route_c19.png>
-Package pdftex.def Info: ./images//route_c19.png  used on input line 604.
+Package pdftex.def Info: ./images//route_c19.png  used on input line 618.
 (pdftex.def)             Requested size: 370.49881pt x 220.48457pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [51 <./images//route_p19.png> <./images//route_c19.png>]
-<./images//cloud20.png, id=537, 976.39781pt x 540.51938pt>
+<./images//cloud20.png, id=585, 976.39781pt x 540.51938pt>
 File: ./images//cloud20.png Graphic file (type png)
 <use ./images//cloud20.png>
-Package pdftex.def Info: ./images//cloud20.png  used on input line 615.
+Package pdftex.def Info: ./images//cloud20.png  used on input line 629.
 (pdftex.def)             Requested size: 390.0pt x 215.89876pt.
-<./images//route_p20.png, id=538, 664.73344pt x 654.94687pt>
+<./images//route_p20.png, id=586, 664.73344pt x 654.94687pt>
 File: ./images//route_p20.png Graphic file (type png)
 <use ./images//route_p20.png>
-Package pdftex.def Info: ./images//route_p20.png  used on input line 622.
+Package pdftex.def Info: ./images//route_p20.png  used on input line 636.
 (pdftex.def)             Requested size: 269.10095pt x 265.1421pt.
-<./images//route_c20.png, id=539, 621.82312pt x 648.92438pt>
+<./images//route_c20.png, id=587, 621.82312pt x 648.92438pt>
 File: ./images//route_c20.png Graphic file (type png)
 <use ./images//route_c20.png>
-Package pdftex.def Info: ./images//route_c20.png  used on input line 629.
+Package pdftex.def Info: ./images//route_c20.png  used on input line 643.
 (pdftex.def)             Requested size: 269.10095pt x 280.82426pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -946,20 +930,20 @@ Overfull \vbox (18.66634pt too high) has occurred while \output is active []
 
 
 [53 <./images//route_p20.png> <./images//route_c20.png>]
-<./images//cloud21.png, id=553, 974.89218pt x 535.2497pt>
+<./images//cloud21.png, id=603, 974.89218pt x 535.2497pt>
 File: ./images//cloud21.png Graphic file (type png)
 <use ./images//cloud21.png>
-Package pdftex.def Info: ./images//cloud21.png  used on input line 639.
+Package pdftex.def Info: ./images//cloud21.png  used on input line 653.
 (pdftex.def)             Requested size: 390.0pt x 214.12057pt.
-<./images//route_p21.png, id=554, 876.27374pt x 655.69969pt>
+<./images//route_p21.png, id=604, 876.27374pt x 655.69969pt>
 File: ./images//route_p21.png Graphic file (type png)
 <use ./images//route_p21.png>
-Package pdftex.def Info: ./images//route_p21.png  used on input line 646.
+Package pdftex.def Info: ./images//route_p21.png  used on input line 660.
 (pdftex.def)             Requested size: 350.99762pt x 262.64542pt.
-<./images//route_c21.png, id=555, 878.53218pt x 663.22781pt>
+<./images//route_c21.png, id=605, 878.53218pt x 663.22781pt>
 File: ./images//route_c21.png Graphic file (type png)
 <use ./images//route_c21.png>
-Package pdftex.def Info: ./images//route_c21.png  used on input line 653.
+Package pdftex.def Info: ./images//route_c21.png  used on input line 667.
 (pdftex.def)             Requested size: 350.99762pt x 264.98282pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -969,54 +953,47 @@ Overfull \vbox (0.3282pt too high) has occurred while \output is active []
 
 
 [55 <./images//route_p21.png> <./images//route_c21.png>]
-Overfull \hbox (124.53937pt too wide) in paragraph at lines 662--663
-\OT1/cmr/m/n/12 Scans con-ducted: [][]\OT1/cmtt/m/n/12 continousScanning_0022[]
-\OT1/cmr/m/n/12 , [][]\OT1/cmtt/m/n/12 continousScanning_0023[]\OT1/cmr/m/n/12 
-, [][]\OT1/cmtt/m/n/12 continousScanning_0024[]\OT1/cmr/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--663
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
 
  []
 
-<./images//cloud22.png, id=570, 977.15062pt x 511.9125pt>
+<./images//cloud22.png, id=622, 977.15062pt x 511.9125pt>
 File: ./images//cloud22.png Graphic file (type png)
 <use ./images//cloud22.png>
-Package pdftex.def Info: ./images//cloud22.png  used on input line 667.
+Package pdftex.def Info: ./images//cloud22.png  used on input line 681.
 (pdftex.def)             Requested size: 390.0pt x 204.31613pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56 <./images//cloud22.png>]
-<./images//route_p22.png, id=578, 1087.06125pt x 534.49687pt>
+<./images//route_p22.png, id=630, 1087.06125pt x 534.49687pt>
 File: ./images//route_p22.png Graphic file (type png)
 <use ./images//route_p22.png>
-Package pdftex.def Info: ./images//route_p22.png  used on input line 675.
+Package pdftex.def Info: ./images//route_p22.png  used on input line 689.
 (pdftex.def)             Requested size: 350.99762pt x 172.58392pt.
-<./images//route_c22.png, id=579, 1090.82532pt x 536.0025pt>
+<./images//route_c22.png, id=631, 1090.82532pt x 536.0025pt>
 File: ./images//route_c22.png Graphic file (type png)
 <use ./images//route_c22.png>
-Package pdftex.def Info: ./images//route_c22.png  used on input line 682.
+Package pdftex.def Info: ./images//route_c22.png  used on input line 696.
 (pdftex.def)             Requested size: 350.99762pt x 172.46486pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [57 <./images//route_p22.png> <./images//route_c22.png>]
-<./images//cloud23.png, id=586, 971.88094pt x 541.27219pt>
+<./images//cloud23.png, id=640, 971.88094pt x 541.27219pt>
 File: ./images//cloud23.png Graphic file (type png)
 <use ./images//cloud23.png>
-Package pdftex.def Info: ./images//cloud23.png  used on input line 693.
+Package pdftex.def Info: ./images//cloud23.png  used on input line 707.
 (pdftex.def)             Requested size: 390.0pt x 217.1988pt.
-<./images//route_p23.png, id=587, 1101.36469pt x 340.27126pt>
+<./images//route_p23.png, id=641, 1101.36469pt x 340.27126pt>
 File: ./images//route_p23.png Graphic file (type png)
 <use ./images//route_p23.png>
-Package pdftex.def Info: ./images//route_p23.png  used on input line 700.
+Package pdftex.def Info: ./images//route_p23.png  used on input line 714.
 (pdftex.def)             Requested size: 350.99762pt x 108.44249pt.
-<./images//route_c23.png, id=588, 1086.30844pt x 316.18124pt>
+<./images//route_c23.png, id=642, 1086.30844pt x 316.18124pt>
 File: ./images//route_c23.png Graphic file (type png)
 <use ./images//route_c23.png>
-Package pdftex.def Info: ./images//route_c23.png  used on input line 707.
+Package pdftex.def Info: ./images//route_c23.png  used on input line 721.
 (pdftex.def)             Requested size: 350.99762pt x 102.15944pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1025,43 +1002,43 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59 <./images//route_p23.png> <./images//route_c23.png>]
-<./images//cloud24.png, id=602, 974.89218pt x 500.62032pt>
+<./images//cloud24.png, id=658, 974.89218pt x 500.62032pt>
 File: ./images//cloud24.png Graphic file (type png)
 <use ./images//cloud24.png>
-Package pdftex.def Info: ./images//cloud24.png  used on input line 719.
+Package pdftex.def Info: ./images//cloud24.png  used on input line 733.
 (pdftex.def)             Requested size: 390.0pt x 200.26749pt.
-<./images//route_p24.png, id=603, 807.015pt x 651.93562pt>
+<./images//route_p24.png, id=659, 807.015pt x 651.93562pt>
 File: ./images//route_p24.png Graphic file (type png)
 <use ./images//route_p24.png>
-Package pdftex.def Info: ./images//route_p24.png  used on input line 726.
+Package pdftex.def Info: ./images//route_p24.png  used on input line 740.
 (pdftex.def)             Requested size: 312.00119pt x 252.04547pt.
-<./images//route_c24.png, id=604, 762.59906pt x 660.21657pt>
+<./images//route_c24.png, id=660, 762.59906pt x 660.21657pt>
 File: ./images//route_c24.png Graphic file (type png)
 <use ./images//route_c24.png>
-Package pdftex.def Info: ./images//route_c24.png  used on input line 733.
+Package pdftex.def Info: ./images//route_c24.png  used on input line 747.
 (pdftex.def)             Requested size: 312.00119pt x 270.10625pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60 <./images//cloud24.png>]
-<./images//cloud25.png, id=613, 980.16188pt x 539.01375pt>
+<./images//cloud25.png, id=671, 980.16188pt x 539.01375pt>
 File: ./images//cloud25.png Graphic file (type png)
 <use ./images//cloud25.png>
-Package pdftex.def Info: ./images//cloud25.png  used on input line 742.
+Package pdftex.def Info: ./images//cloud25.png  used on input line 756.
 (pdftex.def)             Requested size: 390.0pt x 214.46666pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [61 <./images//route_p24.png> <./images//route_c24.png>]
-<./images//route_p25.png, id=621, 801.74532pt x 665.48625pt>
+<./images//route_p25.png, id=679, 801.74532pt x 665.48625pt>
 File: ./images//route_p25.png Graphic file (type png)
 <use ./images//route_p25.png>
-Package pdftex.def Info: ./images//route_p25.png  used on input line 749.
+Package pdftex.def Info: ./images//route_p25.png  used on input line 763.
 (pdftex.def)             Requested size: 327.59857pt x 271.92706pt.
-<./images//route_c25.png, id=622, 798.73407pt x 665.48625pt>
+<./images//route_c25.png, id=680, 798.73407pt x 665.48625pt>
 File: ./images//route_c25.png Graphic file (type png)
 <use ./images//route_c25.png>
-Package pdftex.def Info: ./images//route_c25.png  used on input line 756.
+Package pdftex.def Info: ./images//route_c25.png  used on input line 770.
 (pdftex.def)             Requested size: 327.59857pt x 272.94252pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1071,31 +1048,24 @@ Overfull \vbox (17.56955pt too high) has occurred while \output is active []
 
 
 [63 <./images//route_p25.png> <./images//route_c25.png>]
-Overfull \hbox (124.53937pt too wide) in paragraph at lines 766--767
-\OT1/cmr/m/n/12 Scans con-ducted: [][]\OT1/cmtt/m/n/12 continousScanning_0026[]
-\OT1/cmr/m/n/12 , [][]\OT1/cmtt/m/n/12 continousScanning_0027[]\OT1/cmr/m/n/12 
-, [][]\OT1/cmtt/m/n/12 continousScanning_0028[]\OT1/cmr/m/n/12 . 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 766--767
+Underfull \hbox (badness 10000) in paragraph at lines 780--781
 
  []
 
-<./images//cloud26.png, id=636, 973.38657pt x 459.96844pt>
+<./images//cloud26.png, id=696, 973.38657pt x 459.96844pt>
 File: ./images//cloud26.png Graphic file (type png)
 <use ./images//cloud26.png>
-Package pdftex.def Info: ./images//cloud26.png  used on input line 770.
+Package pdftex.def Info: ./images//cloud26.png  used on input line 784.
 (pdftex.def)             Requested size: 390.0pt x 184.29292pt.
-<./images//route_p26.png, id=637, 971.88094pt x 668.4975pt>
+<./images//route_p26.png, id=697, 971.88094pt x 668.4975pt>
 File: ./images//route_p26.png Graphic file (type png)
 <use ./images//route_p26.png>
-Package pdftex.def Info: ./images//route_p26.png  used on input line 777.
+Package pdftex.def Info: ./images//route_p26.png  used on input line 791.
 (pdftex.def)             Requested size: 370.49881pt x 254.83752pt.
-<./images//route_c26.png, id=638, 926.71219pt x 662.475pt>
+<./images//route_c26.png, id=698, 926.71219pt x 662.475pt>
 File: ./images//route_c26.png Graphic file (type png)
 <use ./images//route_c26.png>
-Package pdftex.def Info: ./images//route_c26.png  used on input line 784.
+Package pdftex.def Info: ./images//route_c26.png  used on input line 798.
 (pdftex.def)             Requested size: 370.49881pt x 264.8539pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1104,20 +1074,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65 <./images//route_p26.png> <./images//route_c26.png>]
-<./images//cloud27.png, id=652, 974.89218pt x 542.025pt>
+
+LaTeX Warning: Reference `a27' on page 66 undefined on input line 807.
+
+<./images//cloud27.png, id=713, 974.89218pt x 542.025pt>
 File: ./images//cloud27.png Graphic file (type png)
 <use ./images//cloud27.png>
-Package pdftex.def Info: ./images//cloud27.png  used on input line 795.
+Package pdftex.def Info: ./images//cloud27.png  used on input line 809.
 (pdftex.def)             Requested size: 390.0pt x 216.83096pt.
-<./images//route_p27.png, id=653, 799.48688pt x 656.4525pt>
+<./images//route_p27.png, id=714, 799.48688pt x 656.4525pt>
 File: ./images//route_p27.png Graphic file (type png)
 <use ./images//route_p27.png>
-Package pdftex.def Info: ./images//route_p27.png  used on input line 802.
+Package pdftex.def Info: ./images//route_p27.png  used on input line 816.
 (pdftex.def)             Requested size: 343.2019pt x 281.7983pt.
-<./images//route_c27.png, id=654, 864.22874pt x 657.95813pt>
+<./images//route_c27.png, id=715, 864.22874pt x 657.95813pt>
 File: ./images//route_c27.png Graphic file (type png)
 <use ./images//route_c27.png>
-Package pdftex.def Info: ./images//route_c27.png  used on input line 809.
+Package pdftex.def Info: ./images//route_c27.png  used on input line 823.
 (pdftex.def)             Requested size: 343.2019pt x 261.2811pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1127,26 +1100,26 @@ Overfull \vbox (15.77936pt too high) has occurred while \output is active []
 
 
 [67 <./images//route_p27.png> <./images//route_c27.png>]
-<./images//cloud28.png, id=670, 976.39781pt x 514.17094pt>
+<./images//cloud28.png, id=733, 976.39781pt x 514.17094pt>
 File: ./images//cloud28.png Graphic file (type png)
 <use ./images//cloud28.png>
-Package pdftex.def Info: ./images//cloud28.png  used on input line 818.
+Package pdftex.def Info: ./images//cloud28.png  used on input line 832.
 (pdftex.def)             Requested size: 390.0pt x 205.37445pt.
-<./images//route_p28.png, id=671, 936.49875pt x 669.2503pt>
+<./images//route_p28.png, id=734, 936.49875pt x 669.2503pt>
 File: ./images//route_p28.png Graphic file (type png)
 <use ./images//route_p28.png>
-Package pdftex.def Info: ./images//route_p28.png  used on input line 825.
+Package pdftex.def Info: ./images//route_p28.png  used on input line 839.
 (pdftex.def)             Requested size: 370.49881pt x 264.77477pt.
-<./images//route_c28.png, id=672, 944.7797pt x 664.73344pt>
+<./images//route_c28.png, id=735, 944.7797pt x 664.73344pt>
 File: ./images//route_c28.png Graphic file (type png)
 <use ./images//route_c28.png>
-Package pdftex.def Info: ./images//route_c28.png  used on input line 832.
+Package pdftex.def Info: ./images//route_c28.png  used on input line 846.
 (pdftex.def)             Requested size: 370.49881pt x 260.67516pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [68 <./images//cloud28.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 842--843
+Underfull \hbox (badness 10000) in paragraph at lines 856--857
 
  []
 
@@ -1154,20 +1127,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 842--843
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [69 <./images//route_p28.png> <./images//route_c28.png>]
-<./images//cloud29.png, id=686, 970.3753pt x 545.78906pt>
+<./images//cloud29.png, id=751, 970.3753pt x 545.78906pt>
 File: ./images//cloud29.png Graphic file (type png)
 <use ./images//cloud29.png>
-Package pdftex.def Info: ./images//cloud29.png  used on input line 846.
+Package pdftex.def Info: ./images//cloud29.png  used on input line 860.
 (pdftex.def)             Requested size: 390.0pt x 219.36108pt.
-<./images//route_p29.png, id=687, 965.85844pt x 661.72218pt>
+<./images//route_p29.png, id=752, 965.85844pt x 661.72218pt>
 File: ./images//route_p29.png Graphic file (type png)
 <use ./images//route_p29.png>
-Package pdftex.def Info: ./images//route_p29.png  used on input line 853.
+Package pdftex.def Info: ./images//route_p29.png  used on input line 867.
 (pdftex.def)             Requested size: 370.49881pt x 253.82985pt.
-<./images//route_c29.png, id=688, 977.90344pt x 669.2503pt>
+<./images//route_c29.png, id=753, 977.90344pt x 669.2503pt>
 File: ./images//route_c29.png Graphic file (type png)
 <use ./images//route_c29.png>
-Package pdftex.def Info: ./images//route_c29.png  used on input line 860.
+Package pdftex.def Info: ./images//route_c29.png  used on input line 874.
 (pdftex.def)             Requested size: 370.49881pt x 253.56207pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1175,27 +1148,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [70 <./images//cloud29.png>] [71 <./images//route_p29.png> <./images//route_c2
 9.png>]
 (Warsaw_scanning_report.aux (Plan_table.aux))
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `Warsaw_scanning_report.out' has not changed.
 
 (rerunfilecheck)             Checksum: A973FE75894F3BDD8CF04102BB56C25F;2132.
  ) 
 Here is how much of TeX's memory you used:
- 11609 strings out of 476331
- 192844 string characters out of 5804174
- 1879660 words of memory out of 5000000
- 31733 multiletter control sequences out of 15000+600000
+ 11610 strings out of 476331
+ 192849 string characters out of 5804174
+ 1880660 words of memory out of 5000000
+ 31734 multiletter control sequences out of 15000+600000
  518912 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,77p,2554b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,77p,2554b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
 rm1200.pk><S:/MikTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><S:/MikTex/fonts
 /type1/public/amsfonts/cm/cmr10.pfb><S:/MikTex/fonts/type1/public/amsfonts/cm/c
 mr12.pfb><S:/MikTex/fonts/type1/public/amsfonts/cm/cmr17.pfb><S:/MikTex/fonts/t
 ype1/public/amsfonts/cm/cmsl12.pfb><S:/MikTex/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb>
-Output written on Warsaw_scanning_report.pdf (71 pages, 90063063 bytes).
+Output written on Warsaw_scanning_report.pdf (71 pages, 90090272 bytes).
 PDF statistics:
- 776 PDF objects out of 1000 (max. 8388607)
+ 841 PDF objects out of 1000 (max. 8388607)
  194 named destinations out of 1000 (max. 500000)
  565 words of extra memory for PDF output out of 10000 (max. 10000000)
 
