@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  28 NOV 2023 12:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.19)  23 JAN 2024 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -248,6 +248,8 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen159
 \@vwid@roff=\dimen160
 ))
+Package hyperref Info: Option `colorlinks' set `true' on input line 13.
+
 (S:\MikTex\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
@@ -256,24 +258,24 @@ File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 (GoPro_MAX_video_parser_manual.aux)
 \openout1 = `GoPro_MAX_video_parser_manual.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 (S:\MikTex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -296,16 +298,25 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (S:\MikTex\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 9.
+(S:\MikTex\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(S:\MikTex\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(S:\MikTex\tex/latex/graphics\mathcolor.ltx))
+Package hyperref Info: Link coloring ON on input line 15.
 
 (GoPro_MAX_video_parser_manual.out) (GoPro_MAX_video_parser_manual.out)
 \@outlinefile=\write3
 \openout3 = `GoPro_MAX_video_parser_manual.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 17.
+(Font)              <14.4> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
+(Font)              <7> on input line 23.
 
 [1
 
@@ -313,11 +324,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {C:/Users/Bazylax/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 (GoPro_MAX_video_parser_manual.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 4.
+(Font)              <12> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
+(Font)              <6> on input line 2.
 )
 \tf@toc=\write4
 \openout4 = `GoPro_MAX_video_parser_manual.toc'.
@@ -329,22 +340,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
@@ -357,14 +368,14 @@ Underfull \vbox (badness 1389) has occurred while \output is active []
 ]
 Chapter 2.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-2.
+6.
 (S:\MikTex\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-<./images//gopro_update1.png, id=126, 693.34032pt x 1541.76pt>
+<./images//gopro_update1.png, id=115, 693.34032pt x 1541.76pt>
 File: ./images//gopro_update1.png Graphic file (type png)
 <use ./images//gopro_update1.png>
-Package pdftex.def Info: ./images//gopro_update1.png  used on input line 89.
+Package pdftex.def Info: ./images//gopro_update1.png  used on input line 93.
 (pdftex.def)             Requested size: 267.8215pt x 595.56732pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -377,64 +388,64 @@ Overfull \vbox (5.41737pt too high) has occurred while \output is active []
 
 ]
 Chapter 3.
-<./images//GoPro_manual_fragment.png, id=148, 191.9672pt x 103.13531pt>
+<./images//GoPro_manual_fragment.png, id=137, 191.9672pt x 103.13531pt>
 File: ./images//GoPro_manual_fragment.png Graphic file (type png)
 <use ./images//GoPro_manual_fragment.png>
 Package pdftex.def Info: ./images//GoPro_manual_fragment.png  used on input lin
-e 109.
+e 113.
 (pdftex.def)             Requested size: 191.96672pt x 103.13504pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 [11 <./images//GoPro_manual_fragment.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-<./images//camera_connected.jpg, id=157, 308.352pt x 173.448pt>
+<./images//camera_connected.jpg, id=146, 308.352pt x 173.448pt>
 File: ./images//camera_connected.jpg Graphic file (type jpg)
 <use ./images//camera_connected.jpg>
-Package pdftex.def Info: ./images//camera_connected.jpg  used on input line 138
+Package pdftex.def Info: ./images//camera_connected.jpg  used on input line 142
 .
 (pdftex.def)             Requested size: 308.35124pt x 173.44757pt.
 
 Underfull \vbox (badness 2671) has occurred while \output is active []
 
  [12]
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
-Overfull \hbox (19.40674pt too wide) in paragraph at lines 144--145
+Overfull \hbox (19.40674pt too wide) in paragraph at lines 148--149
 []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-<./images//recording_location.png, id=165, 455.45157pt x 223.58531pt>
+<./images//recording_location.png, id=154, 455.45157pt x 223.58531pt>
 File: ./images//recording_location.png Graphic file (type png)
 <use ./images//recording_location.png>
 Package pdftex.def Info: ./images//recording_location.png  used on input line 1
-51.
+55.
 (pdftex.def)             Requested size: 455.45045pt x 223.58475pt.
 
-Overfull \hbox (65.45045pt too wide) in paragraph at lines 151--152
+Overfull \hbox (65.45045pt too wide) in paragraph at lines 155--156
  [][] 
  []
 
@@ -442,33 +453,33 @@ Overfull \hbox (65.45045pt too wide) in paragraph at lines 151--152
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13 <./images//camera_connected.jpg>]
-Overfull \hbox (17.6084pt too wide) in paragraph at lines 155--156
+Overfull \hbox (17.6084pt too wide) in paragraph at lines 159--160
 []\T1/cmr/m/n/12 360 videos' names and their LRV ver-sions start with GS e.g. G
 S020007.360,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 [14 <./images//recording_location.png>]
 Chapter 4.
-<./images//ffmpeg_install1.png, id=182, 602.25pt x 312.41719pt>
+<./images//ffmpeg_install1.png, id=171, 602.25pt x 312.41719pt>
 File: ./images//ffmpeg_install1.png Graphic file (type png)
 <use ./images//ffmpeg_install1.png>
-Package pdftex.def Info: ./images//ffmpeg_install1.png  used on input line 168.
+Package pdftex.def Info: ./images//ffmpeg_install1.png  used on input line 171.
 
 (pdftex.def)             Requested size: 288.50134pt x 149.66298pt.
-<./images//ffmpeg_install2.png, id=183, 597.73312pt x 372.64218pt>
+<./images//ffmpeg_install2.png, id=172, 597.73312pt x 372.64218pt>
 File: ./images//ffmpeg_install2.png Graphic file (type png)
 <use ./images//ffmpeg_install2.png>
-Package pdftex.def Info: ./images//ffmpeg_install2.png  used on input line 176.
+Package pdftex.def Info: ./images//ffmpeg_install2.png  used on input line 179.
 
 (pdftex.def)             Requested size: 288.50134pt x 179.86127pt.
 
@@ -477,230 +488,86 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [15
 
  <./images//ffmpeg_install1.png>]
-<./images//python_install6.png, id=190, 422.7795pt x 464.937pt>
+<./images//python_install6.png, id=179, 422.7795pt x 464.937pt>
 File: ./images//python_install6.png Graphic file (type png)
 <use ./images//python_install6.png>
-Package pdftex.def Info: ./images//python_install6.png  used on input line 188.
+Package pdftex.def Info: ./images//python_install6.png  used on input line 191.
 
 (pdftex.def)             Requested size: 267.8215pt x 294.54355pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16 <./images//ffmpeg_install2.png>]
-<./images//ffmpeg_install3.png, id=198, 394.47375pt x 375.65344pt>
+<./images//ffmpeg_install3.png, id=187, 394.47375pt x 375.65344pt>
 File: ./images//ffmpeg_install3.png Graphic file (type png)
 <use ./images//ffmpeg_install3.png>
-Package pdftex.def Info: ./images//ffmpeg_install3.png  used on input line 196.
+Package pdftex.def Info: ./images//ffmpeg_install3.png  used on input line 199.
 
 (pdftex.def)             Requested size: 267.8215pt x 255.04544pt.
- [17 <./images//python_install6.png> <./images//ffmpeg_install3.png>]
-<./images//python_install1.png, id=205, 916.1728pt x 608.2725pt>
-File: ./images//python_install1.png Graphic file (type png)
-<use ./images//python_install1.png>
-Package pdftex.def Info: ./images//python_install1.png  used on input line 210.
-
-(pdftex.def)             Requested size: 288.50134pt x 191.54189pt.
-<./images//python_install2.png, id=206, 497.4585pt x 305.943pt>
-File: ./images//python_install2.png Graphic file (type png)
-<use ./images//python_install2.png>
-Package pdftex.def Info: ./images//python_install2.png  used on input line 218.
-
-(pdftex.def)             Requested size: 288.50134pt x 177.43771pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18 <./images//python_install1.png>]
-<./images//python_install3.png, id=215, 498.663pt x 305.34074pt>
-File: ./images//python_install3.png Graphic file (type png)
-<use ./images//python_install3.png>
-Package pdftex.def Info: ./images//python_install3.png  used on input line 227.
-
-(pdftex.def)             Requested size: 288.50134pt x 176.65514pt.
-<./images//python_install4.png, id=216, 498.06075pt x 305.34074pt>
-File: ./images//python_install4.png Graphic file (type png)
-<use ./images//python_install4.png>
-Package pdftex.def Info: ./images//python_install4.png  used on input line 235.
-
-(pdftex.def)             Requested size: 288.50134pt x 176.87411pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19 <./images//python_install2.png> <./images//python_install3.png>]
-<./images//python_install5.png, id=226, 497.4585pt x 305.943pt>
-File: ./images//python_install5.png Graphic file (type png)
-<use ./images//python_install5.png>
-Package pdftex.def Info: ./images//python_install5.png  used on input line 243.
-
-(pdftex.def)             Requested size: 288.50134pt x 177.43771pt.
-File: ./images//python_install6.png Graphic file (type png)
-<use ./images//python_install6.png>
-Package pdftex.def Info: ./images//python_install6.png  used on input line 254.
-
-(pdftex.def)             Requested size: 267.8215pt x 294.54355pt.
-
-Underfull \vbox (badness 1960) has occurred while \output is active []
-
- [20 <./images//python_install4.png> <./images//python_install5.png>]
-<./images//python_install7.png, id=236, 356.532pt x 396.2805pt>
-File: ./images//python_install7.png Graphic file (type png)
-<use ./images//python_install7.png>
-Package pdftex.def Info: ./images//python_install7.png  used on input line 262.
-
-(pdftex.def)             Requested size: 267.8215pt x 297.70547pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22 <./images//python_install7.png>]
-Overfull \hbox (34.36438pt too wide) in paragraph at lines 273--274
-[]\T1/cmr/m/n/12 Go to []$\T1/cmtt/m/n/12 https : / / www . jetbrains . com / p
-ycharm / download / ?section = windows$[] 
- []
-
-<./images//pycharm_install1.png, id=247, 1404.74812pt x 707.64375pt>
-File: ./images//pycharm_install1.png Graphic file (type png)
-<use ./images//pycharm_install1.png>
-Package pdftex.def Info: ./images//pycharm_install1.png  used on input line 277
-.
-(pdftex.def)             Requested size: 288.50134pt x 145.32706pt.
-<./images//pycharm_install2.png, id=248, 372.64218pt x 290.58563pt>
-File: ./images//pycharm_install2.png Graphic file (type png)
-<use ./images//pycharm_install2.png>
-Package pdftex.def Info: ./images//pycharm_install2.png  used on input line 285
-.
-(pdftex.def)             Requested size: 288.50134pt x 224.97983pt.
-<./images//pycharm_install3.png, id=249, 374.14781pt x 289.83281pt>
-File: ./images//pycharm_install3.png Graphic file (type png)
-<use ./images//pycharm_install3.png>
-Package pdftex.def Info: ./images//pycharm_install3.png  used on input line 293
-.
-(pdftex.def)             Requested size: 288.50134pt x 223.4992pt.
-
-Underfull \vbox (badness 2197) has occurred while \output is active []
-
-
-Overfull \hbox (5.84065pt too wide) has occurred while \output is active
-\T1/cmr/m/sl/12 4.3.  INSTALL IDE (INTEGRATED DEVELOPMENT ENVIRONMENT) \T1/cmr/
-m/n/12 23
- []
-
-[23 <./images//pycharm_install1.png> <./images//pycharm_install2.png>] [24 <./i
-mages//pycharm_install3.png>]
+ [17 <./images//python_install6.png> <./images//ffmpeg_install3.png>] [18]
 Chapter 5.
-<./images//player1.png, id=268, 1440.88312pt x 783.67781pt>
+<./images//player1.png, id=199, 1440.88312pt x 783.67781pt>
 File: ./images//player1.png Graphic file (type png)
 <use ./images//player1.png>
-Package pdftex.def Info: ./images//player1.png  used on input line 308.
+Package pdftex.def Info: ./images//player1.png  used on input line 216.
 (pdftex.def)             Requested size: 288.50134pt x 156.91216pt.
-<./images//player2.png, id=269, 1440.88312pt x 779.16093pt>
+<./images//player2.png, id=200, 1440.88312pt x 779.16093pt>
 File: ./images//player2.png Graphic file (type png)
 <use ./images//player2.png>
-Package pdftex.def Info: ./images//player2.png  used on input line 316.
+Package pdftex.def Info: ./images//player2.png  used on input line 224.
 (pdftex.def)             Requested size: 288.50134pt x 156.00775pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25
+ [19
 
  <./images//player1.png>]
-<./images//player3.png, id=279, 466.74374pt x 446.41782pt>
+<./images//player3.png, id=210, 466.74374pt x 446.41782pt>
 File: ./images//player3.png Graphic file (type png)
 <use ./images//player3.png>
-Package pdftex.def Info: ./images//player3.png  used on input line 324.
+Package pdftex.def Info: ./images//player3.png  used on input line 232.
 (pdftex.def)             Requested size: 288.50134pt x 275.94514pt.
- [26 <./images//player2.png> <./images//player3.png>]
+ [20 <./images//player2.png> <./images//player3.png>]
 Chapter 6.
-
-Overfull \hbox (32.39954pt too wide) in paragraph at lines 333--334
-\T1/cmr/m/n/12 folder con-tain-ing [][]\T1/cmtt/m/n/12 GoPro_MAX_video_parser [
-]\T1/cmr/m/n/12 and GoPro-Telemetry-Extractor.
- []
-
-
-Overfull \hbox (3.24304pt too wide) in paragraph at lines 333--334
-\T1/cmtt/m/n/12 github . com / miloszwojciechowski / Open-[]vslam-[]project$[] 
-\T1/cmr/m/n/12 and ex-tract
- []
-
-<./images//run1.png, id=287, 742.27313pt x 346.29375pt>
-File: ./images//run1.png Graphic file (type png)
-<use ./images//run1.png>
-Package pdftex.def Info: ./images//run1.png  used on input line 337.
-(pdftex.def)             Requested size: 288.50134pt x 134.5943pt.
-<./images//run2.png, id=288, 380.01974pt x 171.64125pt>
-File: ./images//run2.png Graphic file (type png)
-<use ./images//run2.png>
-Package pdftex.def Info: ./images//run2.png  used on input line 345.
-(pdftex.def)             Requested size: 288.50134pt x 130.30988pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27
-
- <./images//run1.png>]
-<./images//run3.png, id=296, 1123.19624pt x 564.30824pt>
-File: ./images//run3.png Graphic file (type png)
-<use ./images//run3.png>
-Package pdftex.def Info: ./images//run3.png  used on input line 353.
-(pdftex.def)             Requested size: 288.50134pt x 144.94289pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--359
-\T1/cmr/m/n/12 quire-ments.txt file. Click ok if ev-ery-thing is set.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--359
-
- []
-
-<./images//run4.png, id=297, 221.628pt x 21.07875pt>
-File: ./images//run4.png Graphic file (type png)
-<use ./images//run4.png>
-Package pdftex.def Info: ./images//run4.png  used on input line 362.
-(pdftex.def)             Requested size: 288.50134pt x 27.439pt.
-<./images//window1.png, id=298, 416.30531pt x 283.81032pt>
+<./images//window1.png, id=217, 423.83344pt x 283.81032pt>
 File: ./images//window1.png Graphic file (type png)
 <use ./images//window1.png>
-Package pdftex.def Info: ./images//window1.png  used on input line 371.
-(pdftex.def)             Requested size: 288.50134pt x 196.6911pt.
+Package pdftex.def Info: ./images//window1.png  used on input line 243.
+(pdftex.def)             Requested size: 288.50134pt x 193.19632pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28 <./images//run2.png> <./images//run3.png> <./images//run4.png>]
-Overfull \hbox (3.01001pt too wide) in paragraph at lines 379--380
-\T1/cmr/m/n/12 (for the dif-fer-ence check []$\T1/cmtt/m/n/12 https : / / gopro
- . com / content / dam / help /
+Overfull \hbox (15.63828pt too wide) in paragraph at lines 240--249
+\T1/cmr/m/n/12 Af-ter run-ning Go-Pro_MAX_video_parser.exe ap-pli-ca-tion win-d
+ow should
  []
 
-[29 <./images//window1.png>]
-<./images//window2.png, id=316, 621.82312pt x 315.42844pt>
+
+Overfull \hbox (3.01001pt too wide) in paragraph at lines 251--252
+\T1/cmr/m/n/12 (for the dif-fer-ence check [][]$\T1/cmtt/m/n/12 https : / / gop
+ro . com / content / dam / help /
+ []
+
+[21
+
+ <./images//window1.png>]
+<./images//window2.png, id=226, 663.98062pt x 316.18124pt>
 File: ./images//window2.png Graphic file (type png)
 <use ./images//window2.png>
-Package pdftex.def Info: ./images//window2.png  used on input line 388.
-(pdftex.def)             Requested size: 288.50134pt x 146.34541pt.
- [30 <./images//window2.png>]
+Package pdftex.def Info: ./images//window2.png  used on input line 260.
+(pdftex.def)             Requested size: 288.50134pt x 137.38333pt.
+ [22 <./images//window2.png>] [23]
 (GoPro_MAX_video_parser_manual.aux)
-
-Package rerunfilecheck Warning: File `GoPro_MAX_video_parser_manual.out' has ch
-anged.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `GoPro_MAX_video_parser_manual.out':
-
-(rerunfilecheck)             Before: 12D30EEF977013B15278CD174251EB58;2189
-(rerunfilecheck)             After:  2847CFD561A746C546CBFAC67EFAF6B2;2432.
+Package rerunfilecheck Info: File `GoPro_MAX_video_parser_manual.out' has not c
+hanged.
+(rerunfilecheck)             Checksum: 9B6E4B7C5D3966F8F652379FF777E3B5;1577.
  ) 
 Here is how much of TeX's memory you used:
- 9992 strings out of 476331
- 160485 string characters out of 5804174
+ 9897 strings out of 476331
+ 157912 string characters out of 5804174
  1856660 words of memory out of 5000000
- 30196 multiletter control sequences out of 15000+600000
+ 30123 multiletter control sequences out of 15000+600000
  524262 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,76p,500b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,76p,523b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
 ti1200.pk> <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
 pi600\ectt1200.pk> <C:\Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
@@ -713,9 +580,9 @@ pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Ba
 zylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\
 Users\Bazylax\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.
 pk>
-Output written on GoPro_MAX_video_parser_manual.pdf (31 pages, 7738433 bytes).
+Output written on GoPro_MAX_video_parser_manual.pdf (24 pages, 6698781 bytes).
 PDF statistics:
- 724 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

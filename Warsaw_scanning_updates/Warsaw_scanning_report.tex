@@ -14,13 +14,12 @@
 	colorlinks,
 	linkcolor=red,
 	urlcolor=blue}
-
-%opening
+	
+\begin{document}
+	
 \title{Warsaw scanning report}
 \author{Miłosz Wojciechowski}
 \date{\today}
-
-\begin{document}
 
 
 \maketitle
@@ -35,7 +34,7 @@ This document serves as a report of Mandeye (documentation available \href{https
 	\item planning
 	\item field scanning using Mandeye scanner
 	\item fixing trajectories and aligning scans (using \href{https://github.com/MapsHD/HDMapping}{HDMapping software})
-	\item synchronizing scans with with \href{https://isok.gov.pl/index.html}{ISOK LIDAR data} downloaded for free from \href{URL}{geoportal}
+	\item synchronizing scans with with \href{https://isok.gov.pl/index.html}{ISOK LIDAR data} downloaded for free from \href{https://www.geoportal.gov.pl}{geoportal}
 \end{itemize}
 
 For every scan its planned route, covered route and date is be provided. Scans were performed using \href{https://github.com/JanuszBedkowski/mandeye_controller/tree/main}{Mandeye mobile scanning system}. Routes were planned and visualized in QGIS (\url{https://qgis.org/pl/site/index.html}) using database \href{BDOT10k}{https://www.geoportal.gov.pl/pl/dane/baza-danych-obiektow-topograficznych-bdot10k/} and covered routes where registered by a GoPro MAX camera and its GNSS module. Telemetry data and frames were extracted using

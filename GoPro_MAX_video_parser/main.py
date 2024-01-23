@@ -17,8 +17,8 @@ def searchDirectory():
 # Open file explorer to find exctractor.js file
 def findExtractor():
   global extractor
-  extractor = filedialog.askopenfilename(title = "Provide extractor.js file")
-  labelExtractor.config(text="Extractor.js location:" + extractor)
+  extractor = filedialog.askopenfilename(title = "Provide extractor.exe file")
+  labelExtractor.config(text="Extractor.exe location:" + extractor)
 
 # Function that will be run when Time lapse is chosen as video type, it gives additional option and changes options
 # regarding interval between extracted frames
@@ -76,7 +76,7 @@ def run():
   t.daemon = True
   t.start()
 
-# Following code runs only when extractor.js is provided
+# Following code runs only when extractor.exe is provided
   if visualizeBool:
     lock.acquire()
 
@@ -148,10 +148,10 @@ Label(window, text="Saved frame step:", font=10).grid(row=4, column=0, rowspan=2
 entry = Entry(window, font = 20)
 entry.grid(row=4,column=2, rowspan=2, padx=10, sticky=W)
 
-#Choose extractor.js location
-button_extractor = Button(window, text="Pass the extractor.js localization", command=findExtractor)
+#Choose extractor.exe location
+button_extractor = Button(window, text="Pass the extractor.exe localization", command=findExtractor)
 button_extractor.grid(row=6, column=0, padx=25, pady=10)
-labelExtractor = Label(window,text="Extractor.js location:", fg = "blue")
+labelExtractor = Label(window,text="Extractor.exe location:", fg = "blue")
 labelExtractor.grid(row=6, column=1, columnspan=2, sticky=W)
 
 ## State label and buttons

@@ -58,7 +58,7 @@ def framesExtract(vidFile, dir, intervalSeconds, interval):
 def telemetryExtract(vidFile, extractorDir):
   vidFile = vidFile[:-3]+'LRV'
 
-  completed_process = subprocess.run(['node', extractorDir] + [vidFile] + [os.path.dirname(vidFile)], capture_output=True, text=True)
+  completed_process = subprocess.run([extractorDir] + [vidFile] + [os.path.dirname(vidFile)], capture_output=True, text=True)
   if completed_process.stderr:
     messagebox.showwarning(title='WARNING', message='Couldn\'t extract telemetry data.')
     return

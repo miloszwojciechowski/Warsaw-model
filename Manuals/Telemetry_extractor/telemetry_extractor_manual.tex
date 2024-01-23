@@ -6,6 +6,12 @@
 \usepackage{adjustbox}
 \graphicspath{ {./images/} }
 \pagenumbering{gobble}
+
+\hypersetup{
+	colorlinks,
+	linkcolor=red,
+	urlcolor=blue}
+	
 \begin{document}
 
 \author{Miłosz Wojciechowski}
@@ -19,17 +25,17 @@
 \renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
 \tableofcontents
 \chapter{Introduction}
-This is a manual for the GoPro Telemetry extractor program. As an input it takes an .LRV video file recorded by a GoPro MAX camera. Output of this program is a csv file containing telemetry data (date, timestamp, latitude, longitude and altitude) extracted from the video. Csv file name template is: \verb|<video file name>_telemetry.csv|. \\
+This is a manual for the GoPro Telemetry extractor program (download exe file from \href{https://github.com/miloszwojciechowski/Warsaw-model/releases}{github}). As an input it takes an .LRV video file recorded by a GoPro MAX camera. Output of this program is a csv file containing telemetry data (date, timestamp, latitude, longitude and altitude) extracted from the video. Csv file name template is: \verb|<video file name>_telemetry.csv|. \\
+
+
 
 Should you need to read about GoPro MAX camera usage, look up its manual: \url{https://gopro.com/content/dam/help/max/manuals/MAX_UM_ENG_REVB.pdf} \\
 List of requirements:
 \begin{itemize}
 	\item GoPro MAX camera
 	\item Computer with at least a Windows 10 operating system
-	\item Version control system Git
-	\item Node js environment
 \end{itemize}
-This manual covers the installation of all necessary programs required to run Telemetry extractor including Git and node js.
+
 \chapter{Update GoPro MAX camera}
 First of all you need to update your GoPro MAX before recording anything, following steps will show how to do this:
 \begin{enumerate}
@@ -112,173 +118,39 @@ Regular videos’ and their LRV versions’ names start with GH for the former a
 \item Copy videos of your choice and save them on your computer.
 \end{enumerate}
 
-\chapter{Install environment and Git}
-\section{Install Git}
-\begin{enumerate}
-	\item Download Git installer from \url{https://gitforwindows.org} and run it.
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{git_install1}%
-		}		
-		\medskip	
-	\end{minipage}
-	Select components as seen in the picture above.
-	
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{git_install2}%
-		}		
-		\medskip	
-	\end{minipage}
-	Choose default editor for Git, I recommend Notepad++ if you don't have it download it from here: \url{https://notepad-plus-plus.org/downloads/}. Install the newest version, you don't have to change anything during installation, just accept and install.
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{git_install3}%
-		}		
-		\medskip	
-	\end{minipage}
-	Select to override since many guides now use the word "main" not "master" for main branch
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{git_install4}%
-		}		
-		\medskip	
-	\end{minipage}
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{git_install5}%
-		}		
-		\medskip	
-	\end{minipage}
-	Choose option to use ssh that comes with Git.
-	\item Go through all next appearing windows and change nothing in them. At the end click "Install".
-\end{enumerate}
-\pagebreak
-\section{Install node js}
-\begin{enumerate}
-	\item Go to \url{https://nodejs.org/en} and download recommended version and run the installer.
-	\begin{figure}[H]
-		\centering
-		\includegraphics{nodejs_install}
-		\caption{Nodejs website fragment.}
-	\end{figure}
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{node_install0}%
-		}		
-		\medskip	
-	\end{minipage}
-	Accept user agreement
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{node_install1}%
-		}		
-		\medskip	
-	\end{minipage}
-	Choose location, default one is sufficient.
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{node_install2}%
-		}		
-		\medskip	
-	\end{minipage}
-	Do not change anything, install everything as it is.
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{node_install3}%
-		}		
-		\medskip	
-	\end{minipage}
-	You do not need to install extra tools to run telemetry extractor.
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{node_install4}%
-		}		
-		\medskip	
-	\end{minipage}
-	Click Install to begin installation
-	\pagebreak
-	\item To check if installed correctly simply open Command Prompt by typing “cmd” in the Start Menu and write “node”, if everything was done properly version of node should appear.
-	\begin{figure}[H]
-		\centering
-		\includegraphics{node_confirmation}
-		\caption{Command Prompt fragment confirming proper installation of Nodejs.}
-	\end{figure}
-\end{enumerate}
-After Git and Node js installation it's best to restart your computer, especially if writing "node" in Command Prompt returned error.
-
 \chapter{Run Telemetry-extractor}
-\section{Download program and dependencies from Git}
 \begin{enumerate}
-	\item Download main repository: \url{https://github.com/miloszwojciechowski/Open-vslam-project} and extract it in a directory of your choice.
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{run1}%
-		}		
-		\medskip	
-	\end{minipage}
-	Go to folder where the repository has been extracted and right click the on free space and click Open Git Bash here.
-	\item \begin{minipage}[t]{\linewidth}
-		\raggedright
-		\adjustbox{valign=t}{%
-			\includegraphics[width=.8\linewidth]{run2}%
-		}		
-		\medskip	
-	\end{minipage}
-	Now write the following command: \textit{git submodule update \texttt{-{}-}init \texttt{-{}-}recursive} or copy it from here and right click on the Bash and click Paste. Now run the command. \\
-	If you use Git for the first time, information will pop that you need to identify yourself, follow the displayed instructions to log with your GitHub account.\\
-	Fulfilling this step will download \href{https://github.com/JuanIrache/gopro-telemetry}{gopro-telemetry} and \href{https://github.com/JuanIrache/gpmf-extract}{gpmf-extract}
-	\item You can close git bash and open Command Prompt by typing cmd in Windows Start Menu.
-	\item Choose the disc on which you have telemetry extractor by writing disc letter followed by colon e.g. D:
-	\item Move to telemetry extractor directory by typing "cd" followed by the name of desired directory e.g cd GoPro-Telemetry-Extractor.
-	\item From there move to both: gopro-telemetry and gpmf-extract (again by using cd <directory name>, if you want to go to previous directory type "cd..") and in both directories write \textit{npm install} to install libraries.
-\end{enumerate}
-
-\section{Run the program}
-\begin{enumerate}
-	\item In command prompt either go to GoPro-Telemetry-Extractor location (the one with extractor.js file) or run program from the default place. Telemetry extractor accepts up to 3 arguments:\\
+	\item In command prompt either go to GoPro-Telemetry-Extractor location (the one with extractor.exe file) or run program from the default place. Telemetry extractor accepts up to 3 arguments:\\
 	\begin{itemize}
-		\item path to extractor.js (if you went to its location in Command Prompt just write extractor.js e.g "node extractor.js ..."
-		\item path to a video file (if a video file is in the same location as the one you are running the script from only a video file name will be needed e.g. you are running script from \verb|S:\GoPro-videos| which contains GS020007.LRV then just write: \\
-		" \verb|node S:\GoPro-Telemetry-Extractor\extractor.js GS020007.LRV|..."))
-		\item path to location where telemetry csv file should be generated, if not given a default place for it will be extractor.js directory
+		\item path to extractor.exe (if you went to its location in Command Prompt just write extractor.exe e.g "extractor.exe ..."
+		\item path to a video file, if a video file is in the same location as extractor.exe only a video file name will be needed e.g. \verb|extractor.exe GS020007.LRV|...
+		\item OPTIONAL path to location where telemetry csv file should be generated, if not given a default place for it will be extractor.exe directory
 	\end{itemize}
 	\item To extract telemetry use .LRV files if possible since this program won't work for files with size bigger than 2GB
 	\item As mentioned above you have a few options to run the program:
 	\begin{itemize}
-		\item Run from completely random place without extractor.js nor a video file e.g. default Command Prompt directory, command template: \\
-		node <extractor.js path> <video file path> <optional telemetry csv generation directory>\\
+		\item Run from completely random place without extractor.exe nor a video file e.g. default Command Prompt directory, command template: \\
+		<extractor.exe path> <video file path> <optional telemetry csv generation directory>\\
 		e.g.\\
-		\verb|node S:\GoPro-Telemetry-Extractor\extractor.js S:\GoPro-videos|\\ \verb|\GS020007.LRV|\\
+		\verb|S:\GoPro-Telemetry-Extractor\extractor.exe S:\GoPro-videos|\\ \verb|\GS020007.LRV|\\
 		
-		This will generate telemetry csv file in the extractor.js location.
-		\item Run from extractor.js directory that doesn't contain video file, command template:\\
-		node extractor.js <video file path> <optional telemetry csv generation directory>\\
+		This will generate telemetry csv file in the extractor.exe location.
+		\item Run from extractor.exe directory that doesn't contain video file, command template:\\
+		extractor.exe <video file path> <optional telemetry csv generation directory>\\
 		e.g.\\
-		\verb|node extractor.js S:\GoPro-videos\GS020007.LRV S:\Telemetry\|\\
+		\verb|extractor.exe S:\GoPro-videos\GS020007.LRV S:\Telemetry\|\\
 		
 		This will generate telemetry csv file in \verb|S:\Telemetry\| directory.
-		\item Run from directory without extractor.js but with video file, command template:\\
-		node <extractor.js path> <video file name> <optional telemetry csv generation directory>\\
+		\item Run from directory without extractor.exe but with video file, command template:\\
+		<extractor.exe path> <video file name> <optional telemetry csv generation directory>\\
 		e.g.\\
-		\verb|node S:\GoPro-Telemetry-Extractor\extractor.js GS020007.LRV|\\
+		\verb|S:\GoPro-Telemetry-Extractor\extractor.exe GS020007.LRV|\\
 		
-		This will generate telemetry csv file in the extractor.js location.
-		\item Run from extractor.js directory containing video file, command template:\\
-		node extractor.js <video file name> <optional telemetry csv generation directory>\\
+		This will generate telemetry csv file in the extractor.exe location.
+		\item Run from extractor.exe directory containing video file, command template:\\
+		extractor.exe <video file name> <optional telemetry csv generation directory>\\
 		e.g.\\
-		\verb|node extractor.js GS020007.LRV S:\Telemetry\|\\
+		\verb|extractor.exe GS020007.LRV S:\Telemetry\|\\
 		This will generate telemetry csv file in \verb|S:\Telemetry\| directory.		
 	\end{itemize}
 \end{enumerate}

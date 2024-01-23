@@ -2,12 +2,12 @@
   "name": "extractor",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "extractor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Milosz Wojciechowski",
+  "license": "MIT",
   "devDependencies": {
     "binary-parser": "^2.2.1",
     "mp4box": "^0.5.2"

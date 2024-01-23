@@ -2,11 +2,6 @@
 \contentsline {chapter}{\numberline {2}Update GoPro MAX camera}{5}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Recording a video}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}How to record a video}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}GoPro video types}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.2}GoPro video types}{10}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Export camera recordings}{10}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Install environment and Git}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Install Git}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Install node js}{14}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Run Telemetry-extractor}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Download program and dependencies from Git}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Run the program}{20}{section.5.2}%
+\contentsline {chapter}{\numberline {4}Run Telemetry-extractor}{13}{chapter.4}%
